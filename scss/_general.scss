@@ -1,0 +1,100 @@
+/*GENERAL*/
+
+
+/*Selectores de etiqueta*/
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    color: $azul;
+    height: 500px;
+    font-family: $fontuno;
+    font-size: $font47;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+h2 {
+    color: $negro;
+    font-family: $fontdos;
+    font-size: $font45;
+    padding: 8px 0px;
+}
+
+h3 {
+    color: $violeta;
+    font-family: $fontdos;
+    font-size: $font35;
+    padding: 20px 0px 5px 0px;
+    line-height: 30px;
+}
+
+h4 {
+    color: $azuloscuro;
+    font-family: $fonttres;
+    font-size: $font3;
+    text-align: center;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+h5 {
+    color: $azuloscuro;
+    font-family: $fontcuatro;
+    font-size: $font24;
+    text-align: left;
+    padding: 10px 0px;
+    margin: 5px 20px;
+}
+
+p {
+    color: $negro;
+    font-family: $fontcinco;
+    font-size: $font21;
+    line-height: 4.4rem;
+}
+
+body {
+    background-color: $blanco;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    overflow-x: hidden;
+    section ul li {
+        list-style: none;
+        font-family: $fontcinco;
+        font-size: $font3;
+        color: $blanco;
+        padding-right: 15%;
+        text-align: center;
+        line-height: 45px;
+    }
+}
+
+
+/*aside*/
+
+body aside img:hover {
+    transform: rotateY(-360deg);
+    cursor: pointer;
+    transition: 4s;
+}
+
+
+/*pie*/
+
+body footer {
+    text-align: center;
+    background-image: url(../Imagenes/fondoladrillo.png);
+    background-size: 900px 350px;
+    background-image: $gradiantedos;
+    p {
+        color: $negro;
+        text-align: center;
+    }
+}
