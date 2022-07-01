@@ -1,0 +1,68 @@
+/*Nav*/
+
+
+/*selectores de etiqueta*/
+
+body nav {
+    background-image: $gradianteuno;
+    div {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul li {
+            list-style: none;
+            display: inline-block;
+            padding: auto;
+            margin: 0 30px;
+            a {
+                text-decoration: none;
+                font-family: $fontcinco;
+                font-size: $font25;
+                color: $blanco;
+                &:hover {
+                    text-decoration: none;
+                    font-family: $fontcinco;
+                    font-size: $font25;
+                    font-weight: 500;
+                    color: $gris;
+                }
+            }
+        }
+    }
+}
+
+
+/*Nav*/
+
+
+/*selectores de clase*/
+
+.nav-link {
+    padding-top: 3rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.collapse1 {
+    display: none;
+}
+
+
+/*Detalles para logo*/
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 95px;
+    height: 90px;
+}
+
+.logo-ch {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+}
