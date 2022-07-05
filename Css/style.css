@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Lobster&family=Lobster+Two&family=Norican&family=Oleo+Script&family=Pacifico&family=Petit+Formal+Script&family=Playball&family=Rye&family=Satisfy&family=Tapestry&display=swap");
+/*Mixins*/
+/*Maps*/
+/*Colores para los titulos*/
+h1 {
+  color: #0101db; }
+
+h2 {
+  color: #030303; }
+
+h3 {
+  color: #a104c0; }
+
+h4 {
+  color: #0d0d3f; }
+
+h5 {
+  color: #0d0d3f; }
+
 /*Nav*/
 /*selectores de etiqueta*/
 body nav {
@@ -55,7 +73,6 @@ html {
   font-size: 62.5%; }
 
 h1 {
-  color: #0101db;
   height: 500px;
   font-family: "Rye", cursive;
   font-size: 4.7rem;
@@ -65,20 +82,17 @@ h1 {
   align-items: center; }
 
 h2 {
-  color: #030303;
   font-family: "Playball", cursive;
   font-size: 4.5rem;
   padding: 8px 0px; }
 
 h3 {
-  color: #a104c0;
   font-family: "Playball", cursive;
   font-size: 3.5rem;
   padding: 20px 0px 5px 0px;
   line-height: 30px; }
 
 h4 {
-  color: #0d0d3f;
   font-family: "Petit Formal Script", cursive;
   font-size: 3rem;
   text-align: center;
@@ -87,7 +101,6 @@ h4 {
   justify-content: center; }
 
 h5 {
-  color: #0d0d3f;
   font-family: "Lobster", sans-serif;
   font-size: 2.4rem;
   text-align: left;
@@ -172,15 +185,26 @@ body footer {
   background-repeat: no-repeat;
   background-size: 100% 100%; }
 
+.fotomadera {
+  background-image: url(../Imagenes/fondotablamadera.jpg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 400px; }
+
 .foto2 {
   background-image: url(../Imagenes/Foto3.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%; }
 
 .foto3 {
-  background-image: url(../Imagenes/ropa.jpg);
+  background-image: url(../Imagenes/fondocoleccion.jpg);
   background-repeat: no-repeat;
   background-size: 100% 500px; }
+
+.fondoropa {
+  background-image: url(../Imagenes/ropanubes.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
 
 .foto4 {
   background-image: url(../Imagenes/fondosucursal.jpg);
@@ -192,18 +216,7 @@ body footer {
   background-repeat: no-repeat;
   background-size: 100% 500px; }
 
-.fotomadera {
-  background-image: url(../Imagenes/fondotablamadera.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 400px;
-  background-position: 100%; }
-
-/*Ropa*/
-.fondoropa {
-  background-image: url(../Imagenes/ropanubes.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%; }
-
+/*Detalles para item3-index*/
 .fondomujer {
   background-image: url(../Imagenes/fondopollera.jpg); }
   .fondomujer:hover {
@@ -221,8 +234,7 @@ body footer {
 
 .img-gen {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center; }
 
 .img-ind {
@@ -237,13 +249,6 @@ body footer {
 .ropa {
   margin: 10px 20px; }
 
-/*transformaicones*/
-.rotate:hover {
-  transform: rotateY(-360deg);
-  cursor: pointer;
-  transition: 3s; }
-
-/*Detalles para item3 de index*/
 .unisex {
   width: 300px;
   height: 400px;
@@ -251,22 +256,14 @@ body footer {
   padding: 10px 0;
   background-repeat: no-repeat; }
 
+/*transformaicones*/
+.rotate:hover {
+  transform: rotateY(-360deg);
+  cursor: pointer;
+  transition: 3s; }
+
 .transf:hover {
   transform: translateY(-20px); }
-
-/*Para centrar*/
-.centro {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  line-height: 40px; }
-
-.centro2 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-right: 5%;
-  line-height: 115%; }
 
 /*Modificacion para parrafo*/
 .p2 {
@@ -278,13 +275,25 @@ body footer {
 
 .borde-in {
   padding: 30px 100px;
-  line-height: 50px; }
+  line-height: 70px; }
+
+.horizontal, .historia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.izq {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  flex-flow: row wrap;
+  margin: 5px 10px; }
 
 .column {
   display: flex;
-  flex-flow: column wrap;
   justify-content: flex-start;
-  text-align: left; }
+  text-align: left;
+  flex-flow: column wrap; }
 
 .mapa {
   width: 600px;
@@ -295,38 +304,44 @@ body footer {
   flex-direction: row;
   justify-content: center; }
 
-.izq {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  margin: 5px 10px;
-  text-align: left; }
-
-.horizontal {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
 .historia {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   margin: 4% 10% 0 10%;
   padding: 1% 1%; }
 
+.centro {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 40px; }
+
+.centro2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 115%;
+  padding-right: 5%; }
+
+.formulario {
+  font-size: 2.5rem; }
+
 /*Selectores de ID*/
+#interlineado {
+  line-height: 40px; }
+
 #parrafo {
   display: block; }
 
 #imagen {
   display: flex;
-  justify-content: center;
   margin: 25px 10px;
-  border: solid black 5px; }
+  width: 70%;
+  height: 70%;
+  border: solid black 5px;
+  justify-content: center; }
 
 #consulta {
-  line-height: 40px;
-  padding: 40px 50px 10px 50px; }
+  padding: 40px 50px 10px 50px;
+  line-height: 40px; }
 
 #sucursal {
   margin: 10px 20px;
@@ -336,17 +351,14 @@ body footer {
 #sucursal2 {
   margin: 5px 15px;
   padding: 15px 0px 5px 0px;
-  line-height: 10px; }
-
-#interlineado {
-  line-height: 40px; }
+  line-height: 10px;
+  justify-content: center; }
 
 #padding {
   display: inline;
-  line-height: 60px;
-  justify-content: center;
   margin: 0 2%;
-  padding: 1% 3%; }
+  padding: 1% 3%;
+  line-height: 60px; }
 
 /*Animaciones*/
 @keyframes animacionheader {
@@ -366,6 +378,7 @@ body footer {
     background-image: url(../Imagenes/header3.jpg); } }
 
 .foto1 {
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   animation-name: animacionheader;
   animation-iteration-count: infinite;
@@ -423,17 +436,30 @@ body footer {
     grid-template-areas: "nav " "main " "section1 " "section2 " "section3 " "section4" "links " "pie "; }
   .unisex {
     margin: 20px 20px; }
+  h1 {
+    font-size: 2rem;
+    height: 200px;
+    width: auto; }
+  .fondomujer {
+    width: 50%;
+    height: 50%; }
+  .fondohombre {
+    width: 50%;
+    height: 50%; }
+  .fondonene {
+    width: 50%;
+    height: 50%; }
   .aside1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: rgba(255, 80, 80, 0.863); }
-  .aside1 img {
-    justify-content: space-evenly;
-    height: auto;
-    width: 15%;
-    padding: 2% 4%; }
-  .horizontal {
+    .aside1 img {
+      justify-content: space-evenly;
+      height: auto;
+      width: 15%;
+      padding: 2% 4%; }
+  .horizontal, .historia {
     flex-wrap: wrap; }
   /*Nosotros*/
   .grid-nosotros {
@@ -447,8 +473,8 @@ body footer {
     justify-content: center;
     text-align: center;
     margin: 3% 0; }
-  .horizontal2 h2 {
-    font-size: 4rem; }
+    .horizontal2 h2 {
+      font-size: 4rem; }
   .historia {
     display: flex;
     padding: 1% 2% 1% 0;
@@ -463,11 +489,11 @@ body footer {
     display: flex;
     flex-flow: row nowrap;
     background-color: rgba(255, 80, 80, 0.863); }
-  .aside2 img {
-    justify-content: space-evenly;
-    height: auto;
-    width: 7%;
-    margin: 2% 5%; }
+    .aside2 img {
+      justify-content: space-evenly;
+      height: auto;
+      width: 7%;
+      margin: 2% 5%; }
   .img-ind {
     margin: 3% 2%;
     width: 25%; }
@@ -499,11 +525,11 @@ body footer {
     display: flex;
     flex-flow: row nowrap;
     background-color: rgba(255, 80, 80, 0.863); }
-  .aside3 img {
-    justify-content: space-evenly;
-    width: 17%;
-    height: 70%;
-    padding: 0 3%; }
+    .aside3 img {
+      justify-content: space-evenly;
+      width: 17%;
+      height: 70%;
+      padding: 0 3%; }
   /*Sucursal*/
   .grid-sucursal {
     display: grid;
@@ -530,11 +556,11 @@ body footer {
     flex-flow: row nowrap;
     padding: 3%;
     background-color: rgba(255, 80, 80, 0.863); }
-  .aside4 img {
-    justify-content: space-evenly;
-    height: 65%;
-    width: 40%;
-    margin: 2% 2%; }
+    .aside4 img {
+      justify-content: space-evenly;
+      height: 65%;
+      width: 40%;
+      margin: 2% 2%; }
   /*Contacto*/
   .grid-contacto {
     display: grid;
@@ -546,11 +572,11 @@ body footer {
     flex-flow: row nowrap;
     padding: 2%;
     background-color: rgba(255, 80, 80, 0.863); }
-  .aside5 img {
-    justify-content: space-evenly;
-    width: 100%;
-    height: 65%;
-    padding: 0 2%; } }
+    .aside5 img {
+      justify-content: space-evenly;
+      width: 100%;
+      height: 65%;
+      padding: 0 2%; } }
 
 /*tablet*/
 @media only screen and (min-width: 768px) {
@@ -568,10 +594,10 @@ body footer {
     justify-content: space-evenly;
     align-items: center;
     background-color: rgba(255, 80, 80, 0.863); }
-  .aside1 img {
-    height: 10%;
-    width: 65%;
-    padding: 1% 1%; }
+    .aside1 img {
+      height: 10%;
+      width: 65%;
+      padding: 1% 1%; }
   /*Nosotros*/
   .grid-nosotros {
     display: grid;
@@ -584,10 +610,10 @@ body footer {
     justify-content: space-evenly;
     align-items: center;
     background-color: rgba(255, 80, 80, 0.863); }
-  .aside2 img {
-    height: 10%;
-    width: 65%;
-    padding: 1% 1%; }
+    .aside2 img {
+      height: 10%;
+      width: 65%;
+      padding: 1% 1%; }
   .p2 {
     font-size: 2rem;
     line-height: 4.4rem;
@@ -622,9 +648,9 @@ body footer {
     padding: 10% 0;
     margin: 10% 0;
     font-size: 1.7rem; }
-  .categoria-li li {
-    margin: 0 12px;
-    padding: 5% 2%; }
+    .categoria-li li {
+      margin: 0 12px;
+      padding: 5% 2%; }
   .ropa {
     height: 110px;
     width: 110px; }
@@ -636,10 +662,10 @@ body footer {
     justify-content: space-evenly;
     align-items: center;
     background-color: rgba(255, 80, 80, 0.863); }
-  .aside3 img {
-    height: 5%;
-    width: 90%;
-    padding: 10% 0; }
+    .aside3 img {
+      height: 5%;
+      width: 90%;
+      padding: 10% 0; }
   /*Sucursal*/
   .grid-sucursal {
     display: grid;
@@ -654,10 +680,6 @@ body footer {
     padding: 1% 1%;
     width: 90%;
     height: auto; }
-  .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
   .mapa {
     margin: 3% 5%; }
   .column {
@@ -667,11 +689,11 @@ body footer {
     justify-content: space-around;
     padding: 3%;
     background-color: rgba(255, 80, 80, 0.863); }
-  .aside4 img {
-    justify-content: space-evenly;
-    height: 10%;
-    width: 75%;
-    margin: 40% 10%; }
+    .aside4 img {
+      justify-content: space-evenly;
+      height: 10%;
+      width: 75%;
+      margin: 40% 10%; }
   .grid-contacto {
     display: grid;
     grid-template-columns: auto 20vh;
@@ -682,11 +704,11 @@ body footer {
     justify-content: space-evenly;
     padding: 10%;
     background-color: rgba(255, 80, 80, 0.863); }
-  .aside5 img {
-    justify-content: space-evenly;
-    height: 15%;
-    width: 100%;
-    margin: 8% 10%; } }
+    .aside5 img {
+      justify-content: space-evenly;
+      height: 15%;
+      width: 100%;
+      margin: 8% 10%; } }
 
 /*laptop*/
 @media only screen and (min-width: 1024px) {
@@ -732,13 +754,18 @@ body footer {
   /*Sucursal*/
   .grid-sucursal {
     column-gap: 30px; }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .aside4 img {
     height: 15%;
     width: 80%;
     margin: 1% 2%;
     padding: 1% 2%; }
   .fachada {
-    margin: 4% 4%; }
+    margin: 4% 0 4% 1%;
+    width: 50%; }
   /*Contacto*/
   .grid-contacto {
     column-gap: 50px; } }

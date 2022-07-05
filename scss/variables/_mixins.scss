@@ -1,0 +1,55 @@
+/*Mixins*/
+
+//MIXIN
+@mixin background ($background-repeat, $background-size) {
+    background-repeat: $background-repeat;
+    background-size: $background-size;
+}
+
+//MIXIN
+@mixin line ($display, $justify, $align, $line) {
+    display: $display;
+    justify-content: $justify;
+    text-align: $align;
+    line-height: $line
+}
+
+//MIXIN
+@mixin flow ($display, $justify, $align, $flow) {
+    display: $display;
+    justify-content: $justify;
+    text-align: $align;
+    flex-flow: $flow
+}
+
+//MIXIN CON CONDICIONAL
+@mixin justify-content ($content) {
+    @if $content==center {
+        justify-content: center
+    }
+    @else if $content==right {
+        justify-content: right
+    }
+    @else if $content==left {
+        justify-content: left
+    }
+    @else if $content==space-around {
+        justify-content: space-around
+    }
+    @else if $content==space-evenly {
+        justify-content: space-evenly
+    }
+}
+
+//MIXIN CON CONDICIONAL
+@mixin display ($display) {
+    @if $display==flex {
+        display: flex;
+    }
+    @else if $display==block {
+        display: block;
+    }
+    @else if $display==inline {
+        display: inline;
+    }
+}

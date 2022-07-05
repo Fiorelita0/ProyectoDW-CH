@@ -58,17 +58,34 @@
     .unisex {
         margin: 20px 20px;
     }
+    h1 {
+        font-size: 2rem;
+        height: 200px;
+        width: auto;
+    }
+    .fondomujer {
+        width: 50%;
+        height: 50%;
+    }
+    .fondohombre {
+        width: 50%;
+        height: 50%;
+    }
+    .fondonene {
+        width: 50%;
+        height: 50%;
+    }
     .aside1 {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        background-color: rgba(255, 80, 80, 0.863);
-    }
-    .aside1 img {
-        justify-content: space-evenly;
-        height: auto;
-        width: 15%;
-        padding: 2% 4%;
+        @include justify-content(space-around);
+        background-color: $bgrojo;
+        img {
+            @include justify-content(space-evenly);
+            height: auto;
+            width: 15%;
+            padding: 2% 4%;
+        }
     }
     .horizontal {
         flex-wrap: wrap;
@@ -86,9 +103,9 @@
         justify-content: center;
         text-align: center;
         margin: 3% 0;
-    }
-    .horizontal2 h2 {
-        font-size: 4rem;
+        h2 {
+            font-size: 4rem;
+        }
     }
     .historia {
         display: flex;
@@ -106,12 +123,12 @@
         display: flex;
         flex-flow: row nowrap;
         background-color: rgba(255, 80, 80, 0.863);
-    }
-    .aside2 img {
-        justify-content: space-evenly;
-        height: auto;
-        width: 7%;
-        margin: 2% 5%;
+        img {
+            @include justify-content(space-evenly);
+            height: auto;
+            width: 7%;
+            margin: 2% 5%;
+        }
     }
     .img-ind {
         margin: 3% 2%;
@@ -152,12 +169,12 @@
         display: flex;
         flex-flow: row nowrap;
         background-color: rgba(255, 80, 80, 0.863);
-    }
-    .aside3 img {
-        justify-content: space-evenly;
-        width: 17%;
-        height: 70%;
-        padding: 0 3%;
+        img {
+            @include justify-content(space-evenly);
+            width: 17%;
+            height: 70%;
+            padding: 0 3%;
+        }
     }
     /*Sucursal*/
     .grid-sucursal {
@@ -191,12 +208,12 @@
         flex-flow: row nowrap;
         padding: 3%;
         background-color: rgba(255, 80, 80, 0.863);
-    }
-    .aside4 img {
-        justify-content: space-evenly;
-        height: 65%;
-        width: 40%;
-        margin: 2% 2%;
+        img {
+            @include justify-content(space-evenly);
+            height: 65%;
+            width: 40%;
+            margin: 2% 2%;
+        }
     }
     /*Contacto*/
     .grid-contacto {
@@ -210,12 +227,12 @@
         flex-flow: row nowrap;
         padding: 2%;
         background-color: rgba(255, 80, 80, 0.863);
-    }
-    .aside5 img {
-        justify-content: space-evenly;
-        width: 100%;
-        height: 65%;
-        padding: 0 2%;
+        img {
+            @include justify-content(space-evenly);
+            width: 100%;
+            height: 65%;
+            padding: 0 2%;
+        }
     }
 }
 
@@ -236,14 +253,14 @@
     .aside1 {
         display: flex;
         flex-flow: column nowrap;
-        justify-content: space-evenly;
+        @include justify-content(space-evenly);
         align-items: center;
         background-color: rgba(255, 80, 80, 0.863);
-    }
-    .aside1 img {
-        height: 10%;
-        width: 65%;
-        padding: 1% 1%;
+        img {
+            height: 10%;
+            width: 65%;
+            padding: 1% 1%;
+        }
     }
     /*Nosotros*/
     .grid-nosotros {
@@ -255,14 +272,14 @@
     .aside2 {
         display: flex;
         flex-flow: column nowrap;
-        justify-content: space-evenly;
+        @include justify-content(space-evenly);
         align-items: center;
         background-color: rgba(255, 80, 80, 0.863);
-    }
-    .aside2 img {
-        height: 10%;
-        width: 65%;
-        padding: 1% 1%;
+        img {
+            height: 10%;
+            width: 65%;
+            padding: 1% 1%;
+        }
     }
     .p2 {
         font-size: 2rem;
@@ -304,10 +321,10 @@
         padding: 10% 0;
         margin: 10% 0;
         font-size: 1.7rem;
-    }
-    .categoria-li li {
-        margin: 0 12px;
-        padding: 5% 2%;
+        li {
+            margin: 0 12px;
+            padding: 5% 2%;
+        }
     }
     .ropa {
         height: 110px;
@@ -319,14 +336,14 @@
     .aside3 {
         display: flex;
         flex-flow: column nowrap;
-        justify-content: space-evenly;
+        @include justify-content(space-evenly);
         align-items: center;
         background-color: rgba(255, 80, 80, 0.863);
-    }
-    .aside3 img {
-        height: 5%;
-        width: 90%;
-        padding: 10% 0;
+        img {
+            height: 5%;
+            width: 90%;
+            padding: 10% 0;
+        }
     }
     /*Sucursal*/
     .grid-sucursal {
@@ -344,11 +361,6 @@
         width: 90%;
         height: auto;
     }
-    .flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .mapa {
         margin: 3% 5%;
     }
@@ -360,12 +372,12 @@
         justify-content: space-around;
         padding: 3%;
         background-color: rgba(255, 80, 80, 0.863);
-    }
-    .aside4 img {
-        justify-content: space-evenly;
-        height: 10%;
-        width: 75%;
-        margin: 40% 10%;
+        img {
+            @include justify-content(space-evenly);
+            height: 10%;
+            width: 75%;
+            margin: 40% 10%;
+        }
     }
     .grid-contacto {
         display: grid;
@@ -375,15 +387,15 @@
     }
     .aside5 {
         flex-direction: column;
-        justify-content: space-evenly;
+        @include justify-content(space-evenly);
         padding: 10%;
         background-color: rgba(255, 80, 80, 0.863);
-    }
-    .aside5 img {
-        justify-content: space-evenly;
-        height: 15%;
-        width: 100%;
-        margin: 8% 10%;
+        img {
+            @include justify-content(space-evenly);
+            height: 15%;
+            width: 100%;
+            margin: 8% 10%;
+        }
     }
 }
 
@@ -445,6 +457,11 @@
     .grid-sucursal {
         column-gap: 30px;
     }
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .aside4 img {
         height: 15%;
         width: 80%;
@@ -452,7 +469,8 @@
         padding: 1% 2%;
     }
     .fachada {
-        margin: 4% 4%;
+        margin: 4% 0 4% 1%;
+        width: 50%;
     }
     /*Contacto*/
     .grid-contacto {
