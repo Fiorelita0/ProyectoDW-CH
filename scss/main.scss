@@ -1,7 +1,9 @@
 //imports
-@import "_variables";
-@import "_fonts";
-@import "_navBar";
-@import "_general";
-@import "_selectores";
-@import "_mediaqueries";
+@import "./variables/variables";
+@import "./partials/fonts";
+@import "./variables/mixins";
+@import "./variables/maps";
+@import "./partials/navBar";
+@import "./partials/general";
+@import "./partials/selectores";
+@import "./partials/mediaqueries";

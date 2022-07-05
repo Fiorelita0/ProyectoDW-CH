@@ -1,0 +1,17 @@
+/*Maps*/
+
+
+/*Colores para los titulos*/
+
+//mapa
+$titulos:(h1:$azul, h2:$negro, h3:$violeta, h4:$azuloscuro, h5:$azuloscuro);
+//bucle para los valores del mapa
+@each $titulo,
+$color in $titulos {
+    #{$titulo} {
+        color: $color
+    }
+}
+
+//map get
+$espacios:(automatico: auto, diez: 10px, veinte: 20px, treinte: 30px, cuarenta: 40px, cincuenta: 50px, sesenta: 60px, setenta: 70px, ochenta: 80px);

@@ -1,21 +1,21 @@
+//variables globales
 //variables para colores
-$azul:rgb(1, 1, 219);
-$negro: rgb(3, 3, 3);
-$violeta:rgb(161, 4, 192);
 $blanco: white;
-$azuloscuro:rgb(13, 13, 63);
 $gris:grey;
+$negro: rgb(3, 3, 3);
 $blue1:rgb(19, 25, 223);
 $blue2: rgb(25, 19, 146);
 $green1: rgb(5, 233, 5);
 $pink1: rgb(233, 29, 73);
 $pink2:rgb(253, 90, 117);
-//variables para background
+$azul:rgb(1, 1, 219);
+$violeta: rgb(161, 4, 192);
+$azuloscuro:rgb(13, 13, 63); //variables para background
 $gradianteuno:linear-gradient(blue, pink);
 $gradiantedos:linear-gradient(to top, rgb(201, 2, 219), cyan);
-$size100:100% 100%;
 $bgrosa: rgba(255, 192, 203, 0.95);
 $bglila:rgba(202, 127, 202, 0.95);
 $bgceleste:rgba(90, 217, 248, 0.74);
 $bgnaranja:rgba(255, 190, 71, 0.95);
 $bggris:rgba(187, 187, 187, 0.479);
+$bgrojo:rgba(255, 80, 80, 0.863);
