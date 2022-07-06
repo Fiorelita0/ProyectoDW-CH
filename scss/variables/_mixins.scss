@@ -22,6 +22,13 @@
     flex-flow: $flow
 }
 
+//MIXIN
+@mixin direction ($display, $direction, $justify) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
 //MIXIN CON CONDICIONAL
 @mixin justify-content ($content) {
     @if $content==center {
