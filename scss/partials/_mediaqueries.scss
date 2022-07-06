@@ -76,14 +76,33 @@ body {
                 line-height: map-get($espacios, cincuenta);
             }
             button a {
-                font-size: map-get($fonts, unom);
+                font-size: map-get($fonts, uno);
+            }
+            .centro {
+                line-height: map-get($espacios, treinta);
+                padding: 5px 0;
+                font-size: map-get($fonts, tres);
             }
             .display {
                 @include direction(block, row, center);
                 line-height: map-get($espacios, treinta);
             }
+            .fondomujer {
+                @include bg-position(80% 80%, 60%)
+            }
+            .fondohombre {
+                @include bg-position(80% 80%, 60%)
+            }
+            .fondonene {
+                @include bg-position(80% 80%, 60%)
+            }
+            section ul li {
+                font-size: map-get($fonts, dos);
+                line-height: map-get($espacios, cuarenta);
+            }
             .unisex {
                 margin: 0;
+                justify-content: center;
             }
             .borde-in {
                 padding: 0;

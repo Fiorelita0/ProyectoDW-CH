@@ -7,6 +7,12 @@
 }
 
 //MIXIN
+@mixin bg-position ($bg-size, $bg-position) {
+    background-size: $bg-size;
+    background-position-x: $bg-position;
+}
+
+//MIXIN
 @mixin line ($display, $justify, $align, $line) {
     display: $display;
     justify-content: $justify;
