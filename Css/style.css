@@ -115,7 +115,7 @@ p {
   margin: 0; }
 
 button a {
-  font-size: 2rem;
+  font-size: 2.1rem;
   text-align: center; }
 
 body {
@@ -455,13 +455,29 @@ body footer {
       font-size: 1.5rem;
       line-height: 50px; }
     body button a {
-      font-size: 1.5rem; }
+      font-size: 1rem; }
+    body .centro {
+      padding: 5px 0;
+      font-size: 3rem; }
     body .display, body .historia {
       display: block;
       flex-direction: row;
       justify-content: center; }
+    body .fondomujer {
+      background-size: 80% 80%;
+      background-position-x: 60%; }
+    body .fondohombre {
+      background-size: 80% 80%;
+      background-position-x: 60%; }
+    body .fondonene {
+      background-size: 80% 80%;
+      background-position-x: 60%; }
+    body section ul li {
+      font-size: 2rem;
+      line-height: 40px; }
     body .unisex {
-      margin: 0; }
+      margin: 0;
+      justify-content: center; }
     body .borde-in {
       padding: 0;
       line-height: 70px; }
