@@ -52,13 +52,18 @@ p {
     font-family: $fontcinco;
     font-size: $font21;
     line-height: 4.4rem;
+    margin: 0;
+}
+
+button a {
+    font-size: 2rem;
+    text-align: center;
 }
 
 body {
     background-color: $blanco;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: 0px 0px;
     overflow-x: hidden;
     section ul li {
         list-style: none;
@@ -67,7 +72,7 @@ body {
         color: $blanco;
         padding-right: 15%;
         text-align: center;
-        line-height: 45px;
+        line-height: 6rem;
     }
 }
 

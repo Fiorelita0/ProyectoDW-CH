@@ -47,191 +47,204 @@
 
 /*mobile*/
 
-@media only screen and (max-width: 767px) {
-    /*Index*/
-    .grid-index {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: repeat(8, auto);
-        grid-template-areas: "nav " "main " "section1 " "section2 " "section3 " "section4" "links " "pie "
-    }
-    .unisex {
-        margin: 20px 20px;
-    }
-    h1 {
-        font-size: 2rem;
-        height: 200px;
-        width: auto;
-    }
-    .fondomujer {
-        width: 50%;
-        height: 50%;
-    }
-    .fondohombre {
-        width: 50%;
-        height: 50%;
-    }
-    .fondonene {
-        width: 50%;
-        height: 50%;
-    }
-    .aside1 {
-        display: flex;
-        flex-direction: row;
-        @include justify-content(space-around);
-        background-color: $bgrojo;
-        img {
-            @include justify-content(space-evenly);
-            height: auto;
-            width: 15%;
-            padding: 2% 4%;
-        }
-    }
-    .horizontal {
-        flex-wrap: wrap;
-    }
-    /*Nosotros*/
-    .grid-nosotros {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: repeat(6, auto);
-        grid-template-areas: "nav " "main " " section1 " "links" "section2" " pie";
-    }
-    .horizontal2 {
-        display: block;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        margin: 3% 0;
-        h2 {
-            font-size: 4rem;
-        }
-    }
-    .historia {
-        display: flex;
-        padding: 1% 2% 1% 0;
-        margin: 2% 0;
-        justify-content: center;
-    }
-    .p2 {
-        font-size: 1.9rem;
-        margin: 4% 5%;
-        line-height: 200%;
-        text-align: center;
-    }
-    .aside2 {
-        display: flex;
-        flex-flow: row nowrap;
-        background-color: rgba(255, 80, 80, 0.863);
-        img {
-            @include justify-content(space-evenly);
-            height: auto;
-            width: 7%;
-            margin: 2% 5%;
-        }
-    }
-    .img-ind {
-        margin: 3% 2%;
-        width: 25%;
-    }
-    /*Ropa*/
-    .grid-ropa {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: repeat(6, auto);
-        grid-template-areas: "nav" "main" "buscar" "section1" "links" "pie";
-    }
-    .categoria {
-        display: flex;
-        flex-flow: row wrap;
-        margin: 2%;
-        font-size: 1.8rem;
-    }
-    .categoria-li li {
-        font-size: 1.3rem;
-    }
-    .busqueda {
-        font-size: 1.5rem;
-    }
-    #buscador {
-        font-size: 2.5rem;
-        flex-direction: column;
-    }
-    .ropa {
-        height: 100px;
-        width: 100px;
-    }
-    #parrafo p {
-        font-size: 1.6rem;
-        line-height: 4rem;
-    }
-    .aside3 {
-        display: flex;
-        flex-flow: row nowrap;
-        background-color: rgba(255, 80, 80, 0.863);
-        img {
-            @include justify-content(space-evenly);
-            width: 17%;
-            height: 70%;
-            padding: 0 3%;
-        }
-    }
-    /*Sucursal*/
-    .grid-sucursal {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto 30vh auto;
-        grid-template-areas: "nav " "main " "section1 " "section2""links" " pie";
-    }
-    .fachada {
-        height: auto;
-        display: flex;
-        align-content: center;
-        width: 90%;
-        margin: 3% 4%;
-    }
-    .column {
-        padding: 5px 25px
-    }
-    #sucursal {
-        text-align: start;
-    }
-    #sucursal2 {
-        text-align: start;
-    }
-    .mapa {
-        margin: 2% 0;
-        padding: 2% 4%;
-    }
-    .aside4 {
-        display: flex;
-        flex-flow: row nowrap;
-        padding: 3%;
-        background-color: rgba(255, 80, 80, 0.863);
-        img {
-            @include justify-content(space-evenly);
-            height: 65%;
-            width: 40%;
-            margin: 2% 2%;
-        }
-    }
-    /*Contacto*/
-    .grid-contacto {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto 20vh auto;
-        grid-template-areas: "nav" "main" "section1" "links" "pie";
-    }
-    .aside5 {
-        display: flex;
-        flex-flow: row nowrap;
-        padding: 2%;
-        background-color: rgba(255, 80, 80, 0.863);
-        img {
-            @include justify-content(space-evenly);
-            width: 100%;
-            height: 65%;
-            padding: 0 2%;
+$vista:mobile;
+body {
+    @if $vista==mobile {
+        @media only screen and (max-width: 767px) {
+            /*Index*/
+            .grid-index {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: repeat(8, auto);
+                grid-template-areas: "nav" "main" "section1" "section2" "section3" "section4" "links" "pie";
+            }
+            h1 {
+                font-size: map-get($fonts, dos);
+                height: 20rem;
+            }
+            h2 {
+                font-size: map-get($fonts, dos);
+                padding: 10px 0;
+            }
+            h3 {
+                font-size: map-get($fonts, dos);
+                padding: 0;
+                line-height: map-get($espacios, veinte);
+            }
+            p {
+                font-size: map-get($fonts, unom);
+                line-height: map-get($espacios, cincuenta);
+            }
+            button a {
+                font-size: map-get($fonts, unom);
+            }
+            .display {
+                @include direction(block, row, center);
+                line-height: map-get($espacios, treinta);
+            }
+            .unisex {
+                margin: 0;
+            }
+            .borde-in {
+                padding: 0;
+                line-height: map-get($espacios, setenta)
+            }
+            .aside1 {
+                display: flex;
+                flex-direction: row;
+                @include justify-content(space-around);
+                background-color: $bgrojo;
+                img {
+                    @include justify-content(space-evenly);
+                    height: auto;
+                    width: 15%;
+                    padding: 2% 4%;
+                }
+            }
+            /*Nosotros*/
+            .grid-nosotros {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: repeat(6, auto);
+                grid-template-areas: "nav " "main " " section1 " "links" "section2" " pie";
+            }
+            .horizontal2 {
+                display: block;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+                margin: 3% 0;
+                h2 {
+                    font-size: 4rem;
+                }
+            }
+            .historia {
+                display: flex;
+                padding: 1% 2% 1% 0;
+                margin: 2% 0;
+                justify-content: center;
+            }
+            .p2 {
+                font-size: 1.9rem;
+                margin: 4% 5%;
+                line-height: 200%;
+                text-align: center;
+            }
+            .aside2 {
+                display: flex;
+                flex-flow: row nowrap;
+                background-color: rgba(255, 80, 80, 0.863);
+                img {
+                    @include justify-content(space-evenly);
+                    height: auto;
+                    width: 7%;
+                    margin: 2% 5%;
+                }
+            }
+            .img-ind {
+                margin: 3% 2%;
+                width: 25%;
+            }
+            /*Ropa*/
+            .grid-ropa {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: repeat(6, auto);
+                grid-template-areas: "nav" "main" "buscar" "section1" "links" "pie";
+            }
+            .categoria {
+                display: flex;
+                flex-flow: row wrap;
+                margin: 2%;
+                font-size: 1.8rem;
+            }
+            .categoria-li li {
+                font-size: 1.3rem;
+            }
+            .busqueda {
+                font-size: 1.5rem;
+            }
+            #buscador {
+                font-size: 2.5rem;
+                flex-direction: column;
+            }
+            .ropa {
+                height: 100px;
+                width: 100px;
+            }
+            #parrafo p {
+                font-size: 1.6rem;
+                line-height: 4rem;
+            }
+            .aside3 {
+                display: flex;
+                flex-flow: row nowrap;
+                background-color: rgba(255, 80, 80, 0.863);
+                img {
+                    @include justify-content(space-evenly);
+                    width: 17%;
+                    height: 70%;
+                    padding: 0 3%;
+                }
+            }
+            /*Sucursal*/
+            .grid-sucursal {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto auto auto auto 30vh auto;
+                grid-template-areas: "nav " "main " "section1 " "section2""links" " pie";
+            }
+            .fachada {
+                height: auto;
+                display: flex;
+                align-content: center;
+                width: 90%;
+                margin: 3% 4%;
+            }
+            .column {
+                padding: 5px 25px
+            }
+            #sucursal {
+                text-align: start;
+            }
+            #sucursal2 {
+                text-align: start;
+            }
+            .mapa {
+                margin: 2% 0;
+                padding: 2% 4%;
+            }
+            .aside4 {
+                display: flex;
+                flex-flow: row nowrap;
+                padding: 3%;
+                background-color: rgba(255, 80, 80, 0.863);
+                img {
+                    @include justify-content(space-evenly);
+                    height: 65%;
+                    width: 40%;
+                    margin: 2% 2%;
+                }
+            }
+            /*Contacto*/
+            .grid-contacto {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto auto auto 20vh auto;
+                grid-template-areas: "nav" "main" "section1" "links" "pie";
+            }
+            .aside5 {
+                display: flex;
+                flex-flow: row nowrap;
+                padding: 2%;
+                background-color: rgba(255, 80, 80, 0.863);
+                img {
+                    @include justify-content(space-evenly);
+                    width: 100%;
+                    height: 65%;
+                    padding: 0 2%;
+                }
+            }
         }
     }
 }
