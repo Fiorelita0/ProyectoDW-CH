@@ -239,186 +239,182 @@ body {
             }
         }
     }
-}
-
-
-/*tablet*/
-
-@media only screen and (min-width: 768px) {
-    /*Index*/
-    .grid-index {
-        display: grid;
-        grid-template-columns: auto 30vh;
-        grid-template-rows: repeat(6, auto);
-        grid-template-areas: "nav nav" "main main" "section1 links" "section2 links" "section3 links" "section4 links""pie pie"
-    }
-    .log {
-        padding: 1% 1%;
-    }
-    /*Nosotros*/
-    .grid-nosotros {
-        display: grid;
-        grid-template-columns: auto 30vh;
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas: "nav nav " "main main" " section1 links " "section2 section2"" pie pie"
-    }
-    .aside {
-        display: flex;
-        flex-flow: column nowrap;
-        @include justify-content(space-evenly);
-        align-items: center;
-        background-color: rgba(255, 80, 80, 0.863);
-        img {
-            height: 9%;
-            width: 67%;
-            padding: 1% 0;
+    @else if $vista==tablet {
+        @media only screen and (min-width: 768px) {
+            /*Index*/
+            .grid-index {
+                display: grid;
+                grid-template-columns: auto 30vh;
+                grid-template-rows: repeat(6, auto);
+                grid-template-areas: "nav nav" "main main" "section1 links" "section2 links" "section3 links" "section4 links""pie pie"
+            }
+            .log {
+                padding: 1% 1%;
+            }
+            /*Nosotros*/
+            .grid-nosotros {
+                display: grid;
+                grid-template-columns: auto 30vh;
+                grid-template-rows: repeat(5, auto);
+                grid-template-areas: "nav nav " "main main" " section1 links " "section2 section2"" pie pie"
+            }
+            .aside {
+                display: flex;
+                flex-flow: column nowrap;
+                @include justify-content(space-evenly);
+                align-items: center;
+                background-color: rgba(255, 80, 80, 0.863);
+                img {
+                    height: 9%;
+                    width: 67%;
+                    padding: 1% 0;
+                }
+            }
+            .p2 {
+                font-size: 2rem;
+                line-height: 4.4rem;
+                text-align: center;
+            }
+            .historia {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 4% 9% 3% 5%;
+                padding: 1% 1%;
+                width: 90%;
+                height: auto;
+            }
+            .horizontal2 {
+                display: block;
+                flex-direction: row;
+                justify-content: center;
+            }
+            /*Ropa*/
+            .grid-ropa {
+                display: grid;
+                grid-template-columns: 30vh auto 30vh;
+                grid-template-rows: repeat(4, auto);
+                grid-template-areas: "nav nav nav" "main main main" "buscar section1 links" "pie pie pie";
+            }
+            .busqueda {
+                font-size: 1.7rem;
+            }
+            .categoria {
+                flex-flow: column nowrap;
+                padding: 15% 5% 0 5%;
+                margin-top: 8%;
+                font-size: 2rem;
+            }
+            .categoria-li {
+                text-align: start;
+                padding: 10% 0;
+                margin: 10% 0;
+                font-size: 1.7rem;
+                li {
+                    margin: 0 12px;
+                    padding: 5% 2%;
+                }
+            }
+            .ropa {
+                height: 110px;
+                width: 110px;
+            }
+            #parrafo p {
+                font-size: 1.8rem;
+            }
+            /*Sucursal*/
+            .grid-sucursal {
+                display: grid;
+                grid-template-columns: auto 20vh;
+                grid-template-rows: repeat(5, auto);
+                grid-template-areas: "nav nav " "main main" " section1 links " "section2 section2"" pie pie"
+            }
+            .fachada {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                margin: 4% 1% 0% 15%;
+                padding: 0;
+                width: 70%;
+                height: auto;
+            }
+            .mapa {
+                margin: 3% 5%;
+            }
+            .column {
+                padding: 2%;
+            }
+            .grid-contacto {
+                display: grid;
+                grid-template-columns: auto 20vh;
+                grid-template-rows: repeat(4, auto);
+                grid-template-areas: "nav nav" "main main" "section1 links" "pie pie";
+            }
         }
     }
-    .p2 {
-        font-size: 2rem;
-        line-height: 4.4rem;
-        text-align: center;
-    }
-    .historia {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 4% 9% 3% 5%;
-        padding: 1% 1%;
-        width: 90%;
-        height: auto;
-    }
-    .horizontal2 {
-        display: block;
-        flex-direction: row;
-        justify-content: center;
-    }
-    /*Ropa*/
-    .grid-ropa {
-        display: grid;
-        grid-template-columns: 30vh auto 30vh;
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas: "nav nav nav" "main main main" "buscar section1 links" "pie pie pie";
-    }
-    .busqueda {
-        font-size: 1.7rem;
-    }
-    .categoria {
-        flex-flow: column nowrap;
-        padding: 15% 5% 0 5%;
-        margin-top: 8%;
-        font-size: 2rem;
-    }
-    .categoria-li {
-        text-align: start;
-        padding: 10% 0;
-        margin: 10% 0;
-        font-size: 1.7rem;
-        li {
-            margin: 0 12px;
-            padding: 5% 2%;
+    @else if $vista==desktop {
+        @media only screen and (min-width: 1024px) {
+            /*Index*/
+            .grid-index {
+                column-gap: 30px;
+            }
+            .aside {
+                display: flex;
+                flex-flow: column nowrap;
+                @include justify-content(space-evenly);
+                align-items: center;
+                background-color: rgba(255, 80, 80, 0.863);
+                img {
+                    height: 12%;
+                    width: 60%;
+                    margin: 0;
+                    padding: 1% 0;
+                }
+            }
+            /*Nosotros*/
+            .grid-nosotros {
+                column-gap: 40px;
+            }
+            .collapse1 {
+                display: flex;
+                align-items: center;
+            }
+            .horizontal2 {
+                @include direction(flex, row, center)
+            }
+            .img-ind {
+                width: 400px;
+                height: 350px;
+            }
+            .historia {
+                width: 95%;
+                margin: 10% 9% 1% 5%;
+            }
+            /*Ropa*/
+            .grid-ropa {
+                column-gap: 30px;
+            }
+            .ropa {
+                height: 140px;
+                width: 140px;
+            }
+            /*Sucursal*/
+            .grid-sucursal {
+                column-gap: 30px;
+            }
+            .flex {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .fachada {
+                margin: 4% 0 4% 1%;
+                width: 50%;
+            }
+            /*Contacto*/
+            .grid-contacto {
+                column-gap: 50px;
+            }
         }
-    }
-    .ropa {
-        height: 110px;
-        width: 110px;
-    }
-    #parrafo p {
-        font-size: 1.8rem;
-    }
-    /*Sucursal*/
-    .grid-sucursal {
-        display: grid;
-        grid-template-columns: auto 20vh;
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas: "nav nav " "main main" " section1 links " "section2 section2"" pie pie"
-    }
-    .fachada {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        margin: 4% 1% 0% 15%;
-        padding: 0;
-        width: 70%;
-        height: auto;
-    }
-    .mapa {
-        margin: 3% 5%;
-    }
-    .column {
-        padding: 2%;
-    }
-    .grid-contacto {
-        display: grid;
-        grid-template-columns: auto 20vh;
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas: "nav nav" "main main" "section1 links" "pie pie";
-    }
-}
-
-
-/*laptop*/
-
-@media only screen and (min-width: 1024px) {
-    /*Index*/
-    .grid-index {
-        column-gap: 30px;
-    }
-    .aside {
-        display: flex;
-        flex-flow: column nowrap;
-        @include justify-content(space-evenly);
-        align-items: center;
-        background-color: rgba(255, 80, 80, 0.863);
-        img {
-            height: 15%;
-            width: 60%;
-            margin: 0;
-            padding: 1% 0;
-        }
-    }
-    /*Nosotros*/
-    .grid-nosotros {
-        column-gap: 40px;
-    }
-    .collapse1 {
-        display: flex;
-        align-items: center;
-    }
-    .horizontal2 {
-        @include direction(flex, row, center)
-    }
-    .img-ind {
-        width: 400px;
-        height: 350px;
-    }
-    .historia {
-        width: 95%;
-        margin: 10% 9% 1% 5%;
-    }
-    /*Ropa*/
-    .grid-ropa {
-        column-gap: 30px;
-    }
-    .ropa {
-        height: 140px;
-        width: 140px;
-    }
-    /*Sucursal*/
-    .grid-sucursal {
-        column-gap: 30px;
-    }
-    .flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .fachada {
-        margin: 4% 0 4% 1%;
-        width: 50%;
-    }
-    /*Contacto*/
-    .grid-contacto {
-        column-gap: 50px;
     }
 }
