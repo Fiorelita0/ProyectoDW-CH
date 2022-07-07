@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Lobster&family=Lobster+Two&family=Norican&family=Oleo+Script&family=Pacifico&family=Petit+Formal+Script&family=Playball&family=Rye&family=Satisfy&family=Tapestry&display=swap");
-/*Mixins*/
-/*Maps*/
-/*Colores para los titulos*/
 h1 {
   color: #0101db; }
 
@@ -442,153 +439,153 @@ body footer {
 /*Media queries*/
 /*mobile*/
 @media only screen and (max-width: 767px) {
-  body .grid-index {
+  .grid-index {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(8, auto);
     grid-template-areas: "nav" "main" "section1" "section2" "section3" "section4" "links" "pie"; }
-  body h1 {
+  h1 {
     font-size: 2rem;
     height: 20rem; }
-  body h2 {
+  h2 {
     font-size: 2rem;
     padding: 10px 0; }
-  body h3 {
+  h3 {
     font-size: 2rem;
     padding: 5px 0;
     line-height: 20px; }
-  body p {
+  p {
     font-size: 1.5rem;
     line-height: 35px; }
-  body button a {
+  button a {
     font-size: 1rem; }
-  body .centro {
+  .centro {
     padding: 5px 0;
     font-size: 3rem; }
-  body .display, body .historia {
+  .display, .historia {
     display: block;
     flex-direction: row;
     justify-content: center; }
-  body .fondomujer {
+  .fondomujer {
     background-size: 80% 80%;
     background-position-x: 60%; }
-  body .fondohombre {
+  .fondohombre {
     background-size: 80% 80%;
     background-position-x: 60%; }
-  body .fondonene {
+  .fondonene {
     background-size: 80% 80%;
     background-position-x: 60%; }
-  body section ul li {
+  section ul li {
     padding: 0;
     font-size: 2rem;
     line-height: 40px; }
-  body .unisex {
+  .unisex {
     margin: 0;
     justify-content: center; }
-  body .borde-in {
+  .borde-in {
     padding: 0;
     line-height: 70px; }
-  body .aside {
+  .aside {
     display: flex;
     flex-flow: row nowrap;
     background-color: rgba(255, 80, 80, 0.863); }
-    body .aside img {
+    .aside img {
       justify-content: space-evenly;
       width: 17%;
       height: 70%;
       padding: 1% 0; }
-  body #imagen {
+  #imagen {
     width: 50%; }
-  body .grid-nosotros {
+  .grid-nosotros {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "nav " "main " " section1 " "links" "section2" " pie"; }
-  body .horizontal2 {
+  .horizontal2 {
     display: block;
     flex-direction: row;
     justify-content: center;
     text-align: center;
     margin: 0;
     padding: 0; }
-    body .horizontal2 h2 {
+    .horizontal2 h2 {
       font-size: 4rem; }
-  body .historia {
+  .historia {
     display: flex;
     justify-content: center;
     padding: 30px 0;
     margin: 0;
     width: 100%;
     height: 100%; }
-  body .p2 {
+  .p2 {
     font-size: 1.9rem;
     margin: 0;
     padding: 0;
     line-height: 200%;
     text-align: center; }
-  body .img-gen {
+  .img-gen {
     display: block;
     flex-direction: row;
     justify-content: center; }
-  body .img-ind {
+  .img-ind {
     display: block;
     margin: 10px 75px;
     width: 60%;
     height: 50%; }
-  body .grid-ropa {
+  .grid-ropa {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "nav" "main" "buscar" "section1" "links" "pie"; }
-  body h3 {
+  h3 {
     margin: 0 3%; }
-  body .categoria {
+  .categoria {
     display: flex;
     flex-flow: row wrap;
     margin: 2%;
     font-size: 1.8rem; }
-  body .categoria-li li {
+  .categoria-li li {
     font-size: 1.3rem; }
-  body .busqueda {
+  .busqueda {
     font-size: 1.5rem; }
-  body #buscador {
+  #buscador {
     font-size: 2.5rem;
     flex-direction: column; }
-  body .ropa {
+  .ropa {
     height: 100px;
     width: 100px; }
-  body #parrafo p {
+  #parrafo p {
     font-size: 1.6rem;
     line-height: 4rem; }
-  body .grid-sucursal {
+  .grid-sucursal {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "nav " "main " "section1 " "section2" "links" " pie"; }
-  body section div div p {
+  section div div p {
     padding: 0 5px; }
-  body .fachada {
+  .fachada {
     display: flex;
     align-content: center;
     height: 90%;
     width: 90%;
     padding: 10px 10px 10px 40px; }
-  body .column {
+  .column {
     padding: 5px 0; }
-  body #sucursal {
+  #sucursal {
     text-align: start; }
-  body #sucursal2 {
+  #sucursal2 {
     text-align: start; }
-  body .mapa {
+  .mapa {
     width: 90%;
     height: 90%;
     margin: 3% 5%; }
-  body .grid-contacto {
+  .grid-contacto {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto 20vh auto;
     grid-template-areas: "nav" "main" "section1" "links" "pie"; }
-  body .font {
+  .font {
     font-size: 1.5rem; } }
 
 /*tablet*/
@@ -683,7 +680,7 @@ body footer {
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "nav nav" "main main" "section1 links" "pie pie"; } }
 
-/*laptop*/
+/*desktop*/
 @media only screen and (min-width: 1024px) {
   /*Index*/
   .grid-index {
@@ -695,7 +692,7 @@ body footer {
     align-items: center;
     background-color: rgba(255, 80, 80, 0.863); }
     .aside img {
-      height: 15%;
+      height: 12%;
       width: 60%;
       margin: 0;
       padding: 1% 0; }

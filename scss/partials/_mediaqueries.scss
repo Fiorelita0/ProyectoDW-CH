@@ -47,197 +47,192 @@
 
 /*mobile*/
 
-$vista:mobile;
-body {
-    @if $vista==mobile {
-        @media only screen and (max-width: 767px) {
-            //Index
-            .grid-index {
-                display: grid;
-                grid-template-columns: auto;
-                grid-template-rows: repeat(8, auto);
-                grid-template-areas: "nav" "main" "section1" "section2" "section3" "section4" "links" "pie";
-            }
-            h1 {
-                font-size: map-get($fonts, dos);
-                height: 20rem;
-            }
-            h2 {
-                font-size: map-get($fonts, dos);
-                padding: 10px 0;
-            }
-            h3 {
-                font-size: map-get($fonts, dos);
-                padding: 5px 0;
-                line-height: map-get($espacios, veinte);
-            }
-            p {
-                font-size: map-get($fonts, unocinco);
-                line-height: map-get($espacios, treintacinco);
-            }
-            button a {
-                font-size: map-get($fonts, uno);
-            }
-            .centro {
-                line-height: map-get($espacios, treinta);
-                padding: 5px 0;
-                font-size: map-get($fonts, tres);
-            }
-            .display {
-                @include direction(block, row, center);
-                line-height: map-get($espacios, treinta);
-            }
-            .fondomujer {
-                @include bg-position(80% 80%, 60%)
-            }
-            .fondohombre {
-                @include bg-position(80% 80%, 60%)
-            }
-            .fondonene {
-                @include bg-position(80% 80%, 60%)
-            }
-            section ul li {
-                padding: 0;
-                font-size: map-get($fonts, dos);
-                line-height: map-get($espacios, cuarenta);
-            }
-            .unisex {
-                margin: 0;
-                justify-content: center;
-            }
-            .borde-in {
-                padding: 0;
-                line-height: map-get($espacios, setenta)
-            }
-            .aside {
-                @include aside (flex, row nowrap, $bgrojo);
-                img {
-                    @include justify-content(space-evenly);
-                    width: 17%;
-                    height: 70%;
-                    padding: 1% 0;
-                }
-            }
-            #imagen {
-                width: 50%;
-            }
-            //Nosotros 
-            .grid-nosotros {
-                display: grid;
-                grid-template-columns: auto;
-                grid-template-rows: repeat(6, auto);
-                grid-template-areas: "nav " "main " " section1 " "links" "section2" " pie";
-            }
-            .horizontal2 {
-                @include direction(block, row, center);
-                text-align: center;
-                margin: 0;
-                padding: 0;
-                h2 {
-                    font-size: 4rem;
-                }
-            }
-            .historia {
-                display: flex;
-                justify-content: center;
-                padding: 30px 0;
-                margin: 0;
-                width: 100%;
-                height: 100%;
-            }
-            .p2 {
-                font-size: 1.9rem;
-                margin: 0;
-                padding: 0;
-                line-height: 200%;
-                text-align: center;
-            }
-            .img-gen {
-                @include direction(block, row, center);
-                line-height: map-get($espacios, treinta);
-            }
-            .img-ind {
-                display: block;
-                margin: 10px 75px;
-                width: 60%;
-                height: 50%;
-            }
-            //Ropa
-            .grid-ropa {
-                display: grid;
-                grid-template-columns: auto;
-                grid-template-rows: repeat(6, auto);
-                grid-template-areas: "nav" "main" "buscar" "section1" "links" "pie";
-            }
-            h3 {
-                margin: 0 3%
-            }
-            .categoria {
-                display: flex;
-                flex-flow: row wrap;
-                margin: 2%;
-                font-size: map-get($fonts, unoocho);
-            }
-            .categoria-li li {
-                font-size: 1.3rem;
-            }
-            .busqueda {
-                font-size: 1.5rem;
-            }
-            #buscador {
-                font-size: 2.5rem;
-                flex-direction: column;
-            }
-            .ropa {
-                height: 100px;
-                width: 100px;
-            }
-            #parrafo p {
-                font-size: 1.6rem;
-                line-height: 4rem;
-            }
-            //Sucursal
-            .grid-sucursal {
-                display: grid;
-                grid-template-columns: auto;
-                grid-template-rows: repeat(6, auto);
-                grid-template-areas: "nav " "main " "section1 " "section2""links" " pie";
-            }
-            section div div p {
-                padding: 0 5px;
-            }
-            .fachada {
-                display: flex;
-                align-content: center;
-                height: 90%;
-                width: 90%;
-                padding: 10px 10px 10px 40px;
-            }
-            .column {
-                padding: 5px 0
-            }
-            #sucursal {
-                text-align: start;
-            }
-            #sucursal2 {
-                text-align: start;
-            }
-            .mapa {
-                width: 90%;
-                height: 90%;
-                margin: 3% 5%;
-            }
-            //Contacto
-            .grid-contacto {
-                display: grid;
-                grid-template-columns: auto;
-                grid-template-rows: auto auto auto 20vh auto;
-                grid-template-areas: "nav" "main" "section1" "links" "pie";
-            }
-            .font {
-                font-size: 1.5rem;
-            }
+@media only screen and (max-width: 767px) {
+    //Index
+    .grid-index {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: "nav" "main" "section1" "section2" "section3" "section4" "links" "pie";
+    }
+    h1 {
+        font-size: map-get($fonts, dos);
+        height: 20rem;
+    }
+    h2 {
+        font-size: map-get($fonts, dos);
+        padding: 10px 0;
+    }
+    h3 {
+        font-size: map-get($fonts, dos);
+        padding: 5px 0;
+        line-height: map-get($espacios, veinte);
+    }
+    p {
+        font-size: map-get($fonts, unocinco);
+        line-height: map-get($espacios, treintacinco);
+    }
+    button a {
+        font-size: map-get($fonts, uno);
+    }
+    .centro {
+        line-height: map-get($espacios, treinta);
+        padding: 5px 0;
+        font-size: map-get($fonts, tres);
+    }
+    .display {
+        @include direction(block, row, center);
+        line-height: map-get($espacios, treinta);
+    }
+    .fondomujer {
+        @include bg-position(80% 80%, 60%)
+    }
+    .fondohombre {
+        @include bg-position(80% 80%, 60%)
+    }
+    .fondonene {
+        @include bg-position(80% 80%, 60%)
+    }
+    section ul li {
+        padding: 0;
+        font-size: map-get($fonts, dos);
+        line-height: map-get($espacios, cuarenta);
+    }
+    .unisex {
+        margin: 0;
+        justify-content: center;
+    }
+    .borde-in {
+        padding: 0;
+        line-height: map-get($espacios, setenta)
+    }
+    .aside {
+        @include aside (flex, row nowrap, $bgrojo);
+        img {
+            @include justify-content(space-evenly);
+            width: 17%;
+            height: 70%;
+            padding: 1% 0;
         }
+    }
+    #imagen {
+        width: 50%;
+    }
+    //Nosotros 
+    .grid-nosotros {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: "nav " "main " " section1 " "links" "section2" " pie";
+    }
+    .horizontal2 {
+        @include direction(block, row, center);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        h2 {
+            font-size: 4rem;
+        }
+    }
+    .historia {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .p2 {
+        font-size: 1.9rem;
+        margin: 0;
+        padding: 0;
+        line-height: 200%;
+        text-align: center;
+    }
+    .img-gen {
+        @include direction(block, row, center);
+        line-height: map-get($espacios, treinta);
+    }
+    .img-ind {
+        display: block;
+        margin: 10px 75px;
+        width: 60%;
+        height: 50%;
+    }
+    //Ropa
+    .grid-ropa {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: "nav" "main" "buscar" "section1" "links" "pie";
+    }
+    h3 {
+        margin: 0 3%
+    }
+    .categoria {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 2%;
+        font-size: map-get($fonts, unoocho);
+    }
+    .categoria-li li {
+        font-size: 1.3rem;
+    }
+    .busqueda {
+        font-size: 1.5rem;
+    }
+    #buscador {
+        font-size: 2.5rem;
+        flex-direction: column;
+    }
+    .ropa {
+        height: 100px;
+        width: 100px;
+    }
+    #parrafo p {
+        font-size: 1.6rem;
+        line-height: 4rem;
+    }
+    //Sucursal
+    .grid-sucursal {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: "nav " "main " "section1 " "section2""links" " pie";
+    }
+    section div div p {
+        padding: 0 5px;
+    }
+    .fachada {
+        display: flex;
+        align-content: center;
+        height: 90%;
+        width: 90%;
+        padding: 10px 10px 10px 40px;
+    }
+    .column {
+        padding: 5px 0
+    }
+    #sucursal {
+        text-align: start;
+    }
+    #sucursal2 {
+        text-align: start;
+    }
+    .mapa {
+        width: 90%;
+        height: 90%;
+        margin: 3% 5%;
+    }
+    //Contacto
+    .grid-contacto {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto 20vh auto;
+        grid-template-areas: "nav" "main" "section1" "links" "pie";
+    }
+    .font {
+        font-size: 1.5rem;
     }
 }
 
@@ -357,7 +352,7 @@ body {
 }
 
 
-/*laptop*/
+/*desktop*/
 
 @media only screen and (min-width: 1024px) {
     /*Index*/
@@ -371,7 +366,7 @@ body {
         align-items: center;
         background-color: rgba(255, 80, 80, 0.863);
         img {
-            height: 15%;
+            height: 12%;
             width: 60%;
             margin: 0;
             padding: 1% 0;
