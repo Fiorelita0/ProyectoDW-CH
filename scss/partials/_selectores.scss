@@ -121,6 +121,35 @@
         @include background(no-repeat, 100% 100%)
     }
     
+    .img-gen {
+        @include display (flex);
+        flex-flow: row wrap;
+        @include justify-content(center)
+    }
+    
+    .img-ind {
+        padding: auto;
+        margin: 2% 1%;
+        height: auto;
+        width: 20%;
+        &:hover {
+            transform: scale(1.3);
+            transition: 2s;
+        }
+    }
+    
+    .historia {
+        @extend .display;
+        margin: 4% 10% 0 10%;
+        padding: 1% 1%;
+    }
+    
+    //para centrar
+    .centro2 {
+        @include line(flex, center, center, 115%);
+        padding-right: 5%;
+    }
+    
     //ropa
     .foto3 {
         background-image: url(../Imagenes/fondocoleccion.jpg);
@@ -132,10 +161,47 @@
         @include background(no-repeat, 100% 100%)
     }
     
+    .categoria {
+        color: $pink2;
+    }
+    
+    .categoria-li li {
+        color: $blanco
+    }
+    
+    .izq {
+        @include flow(flex, flex-start, left, row wrap);
+        margin: 0 10px;
+    }
+    
     //sucursal
     .foto4 {
         background-image: url(../Imagenes/fondosucursal.jpg);
         @include background(no-repeat, 100% 100%)
+    }
+    
+    .mapa {
+        display: flex;
+        justify-content: center;
+        width: 600px;
+        height: 450px;
+    }
+    
+    #sucursal {
+        margin: 10px 0;
+        padding: 10px 0;
+        line-height: map-get($espacios, cincuenta);
+    }
+    
+    #sucursal2 {
+        margin: 5px 0;
+        padding: 5px 10px;
+        line-height: map-get($espacios, diez);
+        @include justify-content(center)
+    }
+    
+    .column {
+        @include flow(flex, flex-start, left, column wrap);
     }
     
     //contacto
@@ -166,23 +232,6 @@
         }
     }
     
-    .img-gen {
-        @include display (flex);
-        flex-flow: row wrap;
-        @include justify-content(center)
-    }
-    
-    .img-ind {
-        padding: auto;
-        margin: 2% 1%;
-        height: auto;
-        width: 20%;
-        &:hover {
-            transform: scale(1.3);
-            transition: 2s;
-        }
-    }
-    
     .ropa {
         margin: 10px 20px;
     }
@@ -196,36 +245,6 @@
         line-height: map-get($espacios, automatico)
     }
     
-    //horizontal izquierda
-    .izq {
-        @include flow(flex, flex-start, left, row wrap);
-        margin: 5px 10px;
-    }
-    
-    //columna vertical
-    .column {
-        @include flow(flex, flex-start, left, column wrap);
-    }
-    
-    //sucursal
-    .mapa {
-        width: 600px;
-        height: 450px;
-    }
-    
-    //nosotros
-    .historia {
-        @extend .display;
-        margin: 4% 10% 0 10%;
-        padding: 1% 1%;
-    }
-    
-    //para centrar
-    .centro2 {
-        @include line(flex, center, center, 115%);
-        padding-right: 5%;
-    }
-    
     //formulario
     .formulario {
         font-size: 2.5rem;
@@ -237,21 +256,8 @@
     }
     
     #consulta {
-        padding: 40px 50px 10px 50px;
+        padding: 40px 0;
         line-height: map-get($espacios, cuarenta);
-    }
-    
-    #sucursal {
-        margin: 10px 20px;
-        padding: 10px 5px;
-        line-height: map-get($espacios, cincuenta);
-    }
-    
-    #sucursal2 {
-        margin: 5px 15px;
-        padding: 15px 0px 5px 0px;
-        line-height: map-get($espacios, diez);
-        @include justify-content(center)
     }
     /*Animaciones*/
     

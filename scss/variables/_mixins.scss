@@ -35,6 +35,13 @@
     justify-content: $justify;
 }
 
+//MIXIN
+@mixin aside ($display, $flow, $bg-color) {
+    display: $display;
+    flex-flow: $flow;
+    background-color: $bg-color;
+}
+
 //MIXIN CON CONDICIONAL
 @mixin justify-content ($content) {
     @if $content==center {
