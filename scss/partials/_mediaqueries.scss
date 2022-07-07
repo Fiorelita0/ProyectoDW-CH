@@ -51,7 +51,7 @@ $vista:mobile;
 body {
     @if $vista==mobile {
         @media only screen and (max-width: 767px) {
-            /*Index*/
+            //Index
             .grid-index {
                 display: grid;
                 grid-template-columns: auto;
@@ -68,12 +68,12 @@ body {
             }
             h3 {
                 font-size: map-get($fonts, dos);
-                padding: 0;
+                padding: 5px 0;
                 line-height: map-get($espacios, veinte);
             }
             p {
-                font-size: map-get($fonts, unom);
-                line-height: map-get($espacios, cincuenta);
+                font-size: map-get($fonts, unocinco);
+                line-height: map-get($espacios, treintacinco);
             }
             button a {
                 font-size: map-get($fonts, uno);
@@ -97,6 +97,7 @@ body {
                 @include bg-position(80% 80%, 60%)
             }
             section ul li {
+                padding: 0;
                 font-size: map-get($fonts, dos);
                 line-height: map-get($espacios, cuarenta);
             }
@@ -108,19 +109,19 @@ body {
                 padding: 0;
                 line-height: map-get($espacios, setenta)
             }
-            .aside1 {
-                display: flex;
-                flex-direction: row;
-                @include justify-content(space-around);
-                background-color: $bgrojo;
+            .aside {
+                @include aside (flex, row nowrap, $bgrojo);
                 img {
                     @include justify-content(space-evenly);
-                    height: auto;
-                    width: 15%;
-                    padding: 2% 4%;
+                    width: 17%;
+                    height: 70%;
+                    padding: 1% 0;
                 }
             }
-            /*Nosotros*/
+            #imagen {
+                width: 50%;
+            }
+            //Nosotros 
             .grid-nosotros {
                 display: grid;
                 grid-template-columns: auto;
@@ -128,54 +129,54 @@ body {
                 grid-template-areas: "nav " "main " " section1 " "links" "section2" " pie";
             }
             .horizontal2 {
-                display: block;
-                flex-direction: row;
-                justify-content: center;
+                @include direction(block, row, center);
                 text-align: center;
-                margin: 3% 0;
+                margin: 0;
+                padding: 0;
                 h2 {
                     font-size: 4rem;
                 }
             }
             .historia {
                 display: flex;
-                padding: 1% 2% 1% 0;
-                margin: 2% 0;
                 justify-content: center;
+                padding: 30px 0;
+                margin: 0;
+                width: 100%;
+                height: 100%;
             }
             .p2 {
                 font-size: 1.9rem;
-                margin: 4% 5%;
+                margin: 0;
+                padding: 0;
                 line-height: 200%;
                 text-align: center;
             }
-            .aside2 {
-                display: flex;
-                flex-flow: row nowrap;
-                background-color: rgba(255, 80, 80, 0.863);
-                img {
-                    @include justify-content(space-evenly);
-                    height: auto;
-                    width: 7%;
-                    margin: 2% 5%;
-                }
+            .img-gen {
+                @include direction(block, row, center);
+                line-height: map-get($espacios, treinta);
             }
             .img-ind {
-                margin: 3% 2%;
-                width: 25%;
+                display: block;
+                margin: 10px 75px;
+                width: 60%;
+                height: 50%;
             }
-            /*Ropa*/
+            //Ropa
             .grid-ropa {
                 display: grid;
                 grid-template-columns: auto;
                 grid-template-rows: repeat(6, auto);
                 grid-template-areas: "nav" "main" "buscar" "section1" "links" "pie";
             }
+            h3 {
+                margin: 0 3%
+            }
             .categoria {
                 display: flex;
                 flex-flow: row wrap;
                 margin: 2%;
-                font-size: 1.8rem;
+                font-size: map-get($fonts, unoocho);
             }
             .categoria-li li {
                 font-size: 1.3rem;
@@ -195,33 +196,25 @@ body {
                 font-size: 1.6rem;
                 line-height: 4rem;
             }
-            .aside3 {
-                display: flex;
-                flex-flow: row nowrap;
-                background-color: rgba(255, 80, 80, 0.863);
-                img {
-                    @include justify-content(space-evenly);
-                    width: 17%;
-                    height: 70%;
-                    padding: 0 3%;
-                }
-            }
-            /*Sucursal*/
+            //Sucursal
             .grid-sucursal {
                 display: grid;
                 grid-template-columns: auto;
-                grid-template-rows: auto auto auto auto 30vh auto;
+                grid-template-rows: repeat(6, auto);
                 grid-template-areas: "nav " "main " "section1 " "section2""links" " pie";
             }
+            section div div p {
+                padding: 0 5px;
+            }
             .fachada {
-                height: auto;
                 display: flex;
                 align-content: center;
+                height: 90%;
                 width: 90%;
-                margin: 3% 4%;
+                padding: 10px 10px 10px 40px;
             }
             .column {
-                padding: 5px 25px
+                padding: 5px 0
             }
             #sucursal {
                 text-align: start;
@@ -230,39 +223,19 @@ body {
                 text-align: start;
             }
             .mapa {
-                margin: 2% 0;
-                padding: 2% 4%;
+                width: 90%;
+                height: 90%;
+                margin: 3% 5%;
             }
-            .aside4 {
-                display: flex;
-                flex-flow: row nowrap;
-                padding: 3%;
-                background-color: rgba(255, 80, 80, 0.863);
-                img {
-                    @include justify-content(space-evenly);
-                    height: 65%;
-                    width: 40%;
-                    margin: 2% 2%;
-                }
-            }
-            /*Contacto*/
+            //Contacto
             .grid-contacto {
                 display: grid;
                 grid-template-columns: auto;
                 grid-template-rows: auto auto auto 20vh auto;
                 grid-template-areas: "nav" "main" "section1" "links" "pie";
             }
-            .aside5 {
-                display: flex;
-                flex-flow: row nowrap;
-                padding: 2%;
-                background-color: rgba(255, 80, 80, 0.863);
-                img {
-                    @include justify-content(space-evenly);
-                    width: 100%;
-                    height: 65%;
-                    padding: 0 2%;
-                }
+            .font {
+                font-size: 1.5rem;
             }
         }
     }
@@ -282,18 +255,6 @@ body {
     .log {
         padding: 1% 1%;
     }
-    .aside1 {
-        display: flex;
-        flex-flow: column nowrap;
-        @include justify-content(space-evenly);
-        align-items: center;
-        background-color: rgba(255, 80, 80, 0.863);
-        img {
-            height: 10%;
-            width: 65%;
-            padding: 1% 1%;
-        }
-    }
     /*Nosotros*/
     .grid-nosotros {
         display: grid;
@@ -301,16 +262,16 @@ body {
         grid-template-rows: repeat(5, auto);
         grid-template-areas: "nav nav " "main main" " section1 links " "section2 section2"" pie pie"
     }
-    .aside2 {
+    .aside {
         display: flex;
         flex-flow: column nowrap;
         @include justify-content(space-evenly);
         align-items: center;
         background-color: rgba(255, 80, 80, 0.863);
         img {
-            height: 10%;
-            width: 65%;
-            padding: 1% 1%;
+            height: 9%;
+            width: 67%;
+            padding: 1% 0;
         }
     }
     .p2 {
@@ -365,18 +326,6 @@ body {
     #parrafo p {
         font-size: 1.8rem;
     }
-    .aside3 {
-        display: flex;
-        flex-flow: column nowrap;
-        @include justify-content(space-evenly);
-        align-items: center;
-        background-color: rgba(255, 80, 80, 0.863);
-        img {
-            height: 5%;
-            width: 90%;
-            padding: 10% 0;
-        }
-    }
     /*Sucursal*/
     .grid-sucursal {
         display: grid;
@@ -388,46 +337,22 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: start;
-        margin: 4% 9% 3% 5%;
-        padding: 1% 1%;
-        width: 90%;
+        margin: 4% 1% 0% 15%;
+        padding: 0;
+        width: 70%;
         height: auto;
     }
     .mapa {
         margin: 3% 5%;
     }
     .column {
-        padding: 2% 5%;
-    }
-    .aside4 {
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 3%;
-        background-color: rgba(255, 80, 80, 0.863);
-        img {
-            @include justify-content(space-evenly);
-            height: 10%;
-            width: 75%;
-            margin: 40% 10%;
-        }
+        padding: 2%;
     }
     .grid-contacto {
         display: grid;
         grid-template-columns: auto 20vh;
         grid-template-rows: repeat(4, auto);
         grid-template-areas: "nav nav" "main main" "section1 links" "pie pie";
-    }
-    .aside5 {
-        flex-direction: column;
-        @include justify-content(space-evenly);
-        padding: 10%;
-        background-color: rgba(255, 80, 80, 0.863);
-        img {
-            @include justify-content(space-evenly);
-            height: 15%;
-            width: 100%;
-            margin: 8% 10%;
-        }
     }
 }
 
@@ -439,9 +364,18 @@ body {
     .grid-index {
         column-gap: 30px;
     }
-    .aside1 img {
-        height: 11%;
-        width: 90%
+    .aside {
+        display: flex;
+        flex-flow: column nowrap;
+        @include justify-content(space-evenly);
+        align-items: center;
+        background-color: rgba(255, 80, 80, 0.863);
+        img {
+            height: 15%;
+            width: 60%;
+            margin: 0;
+            padding: 1% 0;
+        }
     }
     /*Nosotros*/
     .grid-nosotros {
@@ -452,30 +386,15 @@ body {
         align-items: center;
     }
     .horizontal2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include direction(flex, row, center)
     }
-    .historia {
-        width: 20%;
-        height: 20%;
-        margin: 5% 9% 1% 5%;
-        padding: 8% 1%;
-    }
-    .aside2 img {
-        height: 20%;
-        width: 40%;
-        padding: 1% 1%;
+    .img-ind {
+        width: 400px;
+        height: 350px;
     }
     .historia {
         width: 95%;
-        height: auto;
-        margin: 5% 9% 1% 5%;
-        padding: 8% 1%;
-    }
-    #padding2 {
-        margin: 2% 2%;
-        padding: 2% 2%;
+        margin: 10% 9% 1% 5%;
     }
     /*Ropa*/
     .grid-ropa {
@@ -493,12 +412,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .aside4 img {
-        height: 15%;
-        width: 80%;
-        margin: 1% 2%;
-        padding: 1% 2%;
     }
     .fachada {
         margin: 4% 0 4% 1%;
