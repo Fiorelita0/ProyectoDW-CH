@@ -125,7 +125,7 @@
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(6, auto);
-        grid-template-areas: "nav " "main" "section1" "links" "section2" " pie";
+        grid-template-areas: "nav " "main " " section1 " "links" "section2" " pie";
     }
     .horizontal2 {
         @include direction(block, row, center);
@@ -200,7 +200,7 @@
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(6, auto);
-        grid-template-areas: "nav" "main" "section1" "section2""links" " pie";
+        grid-template-areas: "nav " "main " "section1 " "section2""links" " pie";
     }
     section div div p {
         padding: 0 5px;
@@ -257,7 +257,7 @@
         display: grid;
         grid-template-columns: auto 20vh;
         grid-template-rows: repeat(5, auto);
-        grid-template-areas: "nav nav" "main main" "section1 links" "section2 section2" "pie pie"
+        grid-template-areas: "nav nav " "main main" " section1 links " "section2 section2"" pie pie"
     }
     .aside {
         display: flex;
@@ -332,7 +332,7 @@
         display: grid;
         grid-template-columns: auto 20vh;
         grid-template-rows: repeat(5, auto);
-        grid-template-areas: "nav nav" "main main" "section1 links" "section2 section2" "pie pie"
+        grid-template-areas: "nav nav " "main main" " section1 links " "section2 section2"" pie pie"
     }
     .fachada {
         display: flex;
@@ -364,6 +364,47 @@
     /*Index*/
     .grid-index {
         column-gap: 30px;
+    }
+    .aside {
+        display: flex;
+        flex-flow: column nowrap;
+        @include justify-content(space-evenly);
+        align-items: center;
+        background-color: rgba(255, 80, 80, 0.863);
+        img {
+            height: 12%;
+        }
+    }
+    /*Nosotros*/
+    .grid-nosotros {
+        column-gap: 40px;
+    }
+    .collapse1 {
+        display: flex;
+        align-items: center;
+    }
+    .horizontal2 {
+        @include direction(flex, row, center);
+        height: auto
+    }
+    .div-margin {
+        margin: 1% 2% 1% 1%
+    }
+    .margin {
+        @include line(flex, center, center, 115%);
+    }
+    .img-ind {
+        width: 400px;
+        height: 350px;
+    }
+    .historia {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+    .p2 {
+        margin: 0;
+        padding: 0;
     }
     /*Ropa*/
     .grid-ropa {
