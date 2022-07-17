@@ -392,6 +392,8 @@
     }
     .margin {
         @include line(flex, center, center, 115%);
+        margin-top: 4%;
+        font-size: 3.8rem;
     }
     .img-ind {
         width: 400px;
@@ -403,8 +405,8 @@
         justify-content: start;
     }
     .p2 {
-        font-size: 1.8rem;
-        margin: 0;
+        font-size: 2.2rem;
+        margin-top: 4%;
         padding: 0;
     }
     /*Ropa*/
