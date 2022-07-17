@@ -751,7 +751,7 @@ body footer {
     justify-content: center;
     text-align: center;
     line-height: 115%;
-    margin-top: 2%;
+    margin-top: 4%;
     font-size: 3.8rem; }
   .img-ind {
     width: 400px;
@@ -764,8 +764,8 @@ body footer {
     width: 50%;
     height: 60%; }
   .p2 {
-    font-size: 1.8rem;
-    margin: 0;
+    font-size: 2.2rem;
+    margin-top: 4%;
     padding: 0;
     line-height: 200%;
     text-align: center; }
