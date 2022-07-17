@@ -44,7 +44,6 @@
     .bg-grey {
         background-color: $bggris;
     }
-    /*fondos imagenes*/
     /*Index*/
     
     .foto1 {
@@ -58,14 +57,13 @@
     }
     
     .unisex {
-        width: 300px;
+        width: 305px;
         height: 400px;
         margin: 0 20px;
         padding: 10px 0;
         background-repeat: no-repeat;
     }
     
-    //transformaciones
     .rotate:hover {
         transform: rotateY(-360deg);
         cursor: pointer;
@@ -81,21 +79,38 @@
         line-height: map-get($espacios, setenta)
     }
     
-    //horizontal centro
     .display {
         @include direction(flex, row, center)
     }
     
-    //display block
     .block {
         @include direction(block, row, center)
     }
     
-    //para centrar
     .centro {
         @include line(flex, center, center, 40px);
     }
-    /*selector de ID*/
+    
+    .fondomujer {
+        background-image: url(../Imagenes/fondopollera.jpg);
+        &:hover {
+            background-image: url(../Imagenes/fondomujer.jpg);
+        }
+    }
+    
+    .fondohombre {
+        background-image: url(../Imagenes/fondopantalon.jpg);
+        &:hover {
+            background-image: url(../Imagenes/fondohombre.jpg);
+        }
+    }
+    
+    .fondonene {
+        background-image: url(../Imagenes/fondoremera.jpg);
+        &:hover {
+            background-image: url(../Imagenes/fondonene.jpg);
+        }
+    }
     
     #interlineado {
         line-height: map-get($espacios, cuarenta);
@@ -144,10 +159,17 @@
         padding: 1% 1%;
     }
     
-    //para centrar
     .centro2 {
         @include line(flex, center, center, 115%);
         padding-right: 5%;
+    }
+    
+    .p2 {
+        color: black;
+        font-family: 'Libre Bodoni', serif;
+        font-size: $font170;
+        padding: 0 4% 0 1%;
+        line-height: map-get($espacios, automatico)
     }
     
     //ropa
@@ -174,6 +196,14 @@
         margin: 0 10px;
     }
     
+    .ropa {
+        margin: 10px 20px;
+    }
+    
+    #parrafo {
+        @include display(block);
+    }
+    
     //sucursal
     .foto4 {
         background-image: url(../Imagenes/fondosucursal.jpg);
@@ -185,6 +215,10 @@
         justify-content: center;
         width: 600px;
         height: 450px;
+    }
+    
+    .column {
+        @include flow(flex, flex-start, left, column wrap);
     }
     
     #sucursal {
@@ -200,59 +234,57 @@
         @include justify-content(center)
     }
     
-    .column {
-        @include flow(flex, flex-start, left, column wrap);
-    }
-    
     //contacto
     .foto5 {
         background-image: url(../Imagenes/fondocontacto.jpg);
         @include background(no-repeat, 100% 500px)
     }
-    /*Detalles para item3-index*/
     
-    .fondomujer {
-        background-image: url(../Imagenes/fondopollera.jpg);
-        &:hover {
-            background-image: url(../Imagenes/fondomujer.jpg);
-        }
-    }
-    
-    .fondohombre {
-        background-image: url(../Imagenes/fondopantalon.jpg);
-        &:hover {
-            background-image: url(../Imagenes/fondohombre.jpg);
-        }
-    }
-    
-    .fondonene {
-        background-image: url(../Imagenes/fondoremera.jpg);
-        &:hover {
-            background-image: url(../Imagenes/fondonene.jpg);
-        }
-    }
-    
-    .ropa {
-        margin: 10px 20px;
-    }
-    /*Modificacion para parrafo*/
-    
-    .p2 {
-        color: black;
-        font-family: 'Libre Bodoni', serif;
-        font-size: $font170;
-        padding: 1% 6% 1% 1%;
-        line-height: map-get($espacios, automatico)
-    }
-    
-    //formulario
     .formulario {
         font-size: 2.5rem;
     }
-    /*Selectores de ID*/
     
-    #parrafo {
-        @include display(block);
+    .form-group {
+        margin: 60px 0px
+    }
+    
+    .section-field {
+        border: 3px solid rgb(0, 0, 0);
+        padding: 15px 0 40px 0;
+        width: 100%;
+        margin: 1% 9% 1% 7%;
+        legend {
+            position: relative;
+            width: 70%;
+            font-size: 2rem;
+            margin: 1% 0% 4% 15%;
+        }
+        label {
+            display: block;
+            margin-bottom: 2%;
+        }
+        input {
+            font-size: 1.4rem;
+            width: 80%;
+        }
+        textarea {
+            font-size: 1.4rem;
+            width: 80%;
+            margin: 3% 10% 0 10%;
+            border: 1px solid $negro;
+        }
+    }
+    
+    .right {
+        @include direction(flex, row, flex start);
+        img {
+            @include display(block)
+        }
+    }
+    
+    .row {
+        display: flex;
+        flex-direction: row;
     }
     
     #consulta {

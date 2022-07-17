@@ -80,7 +80,8 @@ h1 {
   display: flex;
   justify-content: center;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+  margin: 0; }
 
 h2 {
   font-family: "Playball", cursive;
@@ -129,17 +130,14 @@ body {
     font-family: "Libre Bodoni", serif;
     font-size: 3rem;
     color: white;
-    padding-right: 15%;
     text-align: center;
-    line-height: 6rem; }
+    line-height: 5rem; }
 
-/*aside*/
 body aside img:hover {
   transform: rotateY(-360deg);
   cursor: pointer;
   transition: 4s; }
 
-/*pie*/
 body footer {
   text-align: center;
   background-image: url(../Imagenes/fondoladrillo.png);
@@ -170,7 +168,7 @@ body footer {
   background-color: rgba(255, 192, 203, 0.95); }
 
 .bg-lila {
-  background-color: rgba(202, 127, 202, 0.95); }
+  background-color: rgba(223, 142, 223, 0.815); }
 
 .bg-celeste {
   background-color: rgba(90, 217, 248, 0.74); }
@@ -184,7 +182,6 @@ body footer {
 .bg-grey {
   background-color: rgba(187, 187, 187, 0.479); }
 
-/*fondos imagenes*/
 /*Index*/
 .foto1 {
   background-image: url(../Imagenes/cels2.jpg);
@@ -197,7 +194,7 @@ body footer {
   background-size: 100% 100%; }
 
 .unisex {
-  width: 300px;
+  width: 305px;
   height: 400px;
   margin: 0 20px;
   padding: 10px 0;
@@ -231,7 +228,21 @@ body footer {
   text-align: center;
   line-height: 40px; }
 
-/*selector de ID*/
+.fondomujer {
+  background-image: url(../Imagenes/fondopollera.jpg); }
+  .fondomujer:hover {
+    background-image: url(../Imagenes/fondomujer.jpg); }
+
+.fondohombre {
+  background-image: url(../Imagenes/fondopantalon.jpg); }
+  .fondohombre:hover {
+    background-image: url(../Imagenes/fondohombre.jpg); }
+
+.fondonene {
+  background-image: url(../Imagenes/fondoremera.jpg); }
+  .fondonene:hover {
+    background-image: url(../Imagenes/fondonene.jpg); }
+
 #interlineado {
   line-height: 40px; }
 
@@ -277,6 +288,13 @@ body footer {
   line-height: 115%;
   padding-right: 5%; }
 
+.p2 {
+  color: black;
+  font-family: 'Libre Bodoni', serif;
+  font-size: 170%;
+  padding: 0 4% 0 1%;
+  line-height: auto; }
+
 .foto3 {
   background-image: url(../Imagenes/fondocoleccion.jpg);
   background-repeat: no-repeat;
@@ -300,6 +318,12 @@ body footer {
   flex-flow: row wrap;
   margin: 0 10px; }
 
+.ropa {
+  margin: 10px 20px; }
+
+#parrafo {
+  display: block; }
+
 .foto4 {
   background-image: url(../Imagenes/fondosucursal.jpg);
   background-repeat: no-repeat;
@@ -310,6 +334,12 @@ body footer {
   justify-content: center;
   width: 600px;
   height: 450px; }
+
+.column {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  flex-flow: column wrap; }
 
 #sucursal {
   margin: 10px 0;
@@ -322,50 +352,49 @@ body footer {
   line-height: 10px;
   justify-content: center; }
 
-.column {
-  display: flex;
-  justify-content: flex-start;
-  text-align: left;
-  flex-flow: column wrap; }
-
 .foto5 {
   background-image: url(../Imagenes/fondocontacto.jpg);
   background-repeat: no-repeat;
   background-size: 100% 500px; }
 
-/*Detalles para item3-index*/
-.fondomujer {
-  background-image: url(../Imagenes/fondopollera.jpg); }
-  .fondomujer:hover {
-    background-image: url(../Imagenes/fondomujer.jpg); }
-
-.fondohombre {
-  background-image: url(../Imagenes/fondopantalon.jpg); }
-  .fondohombre:hover {
-    background-image: url(../Imagenes/fondohombre.jpg); }
-
-.fondonene {
-  background-image: url(../Imagenes/fondoremera.jpg); }
-  .fondonene:hover {
-    background-image: url(../Imagenes/fondonene.jpg); }
-
-.ropa {
-  margin: 10px 20px; }
-
-/*Modificacion para parrafo*/
-.p2 {
-  color: black;
-  font-family: 'Libre Bodoni', serif;
-  font-size: 170%;
-  padding: 1% 6% 1% 1%;
-  line-height: auto; }
-
 .formulario {
   font-size: 2.5rem; }
 
-/*Selectores de ID*/
-#parrafo {
-  display: block; }
+.form-group {
+  margin: 60px 0px; }
+
+.section-field {
+  border: 3px solid black;
+  padding: 15px 0 40px 0;
+  width: 100%;
+  margin: 1% 9% 1% 7%; }
+  .section-field legend {
+    position: relative;
+    width: 70%;
+    font-size: 2rem;
+    margin: 1% 0% 4% 15%; }
+  .section-field label {
+    display: block;
+    margin-bottom: 2%; }
+  .section-field input {
+    font-size: 1.4rem;
+    width: 80%; }
+  .section-field textarea {
+    font-size: 1.4rem;
+    width: 80%;
+    margin: 3% 10% 0 10%;
+    border: 1px solid #030303; }
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex start; }
+  .right img {
+    display: block; }
+
+.row {
+  display: flex;
+  flex-direction: row; }
 
 #consulta {
   padding: 40px 0;
@@ -419,7 +448,9 @@ body footer {
   background-color: #aeaebe; }
 
 #item1 {
-  grid-area: section1; }
+  grid-area: section1;
+  margin: 0;
+  padding: 0; }
 
 #item2 {
   grid-area: section2; }
@@ -601,7 +632,7 @@ body footer {
   /*Nosotros*/
   .grid-nosotros {
     display: grid;
-    grid-template-columns: auto 30vh;
+    grid-template-columns: auto 20vh;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "nav nav " "main main" " section1 links " "section2 section2" " pie pie"; }
   .aside {
@@ -615,17 +646,23 @@ body footer {
       width: 67%;
       padding: 1% 0; }
   .p2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 4.4rem;
     text-align: center; }
   .historia {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 4% 9% 3% 5%;
+    margin: 4% 9% 3% 10%;
     padding: 1% 1%;
-    width: 90%;
+    width: 80%;
     height: auto; }
+  .margin {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 115%;
+    margin-top: 2%; }
   .horizontal2 {
     display: block;
     flex-direction: row;
@@ -705,13 +742,33 @@ body footer {
   .horizontal2 {
     display: flex;
     flex-direction: row;
-    justify-content: center; }
+    justify-content: center;
+    height: auto; }
+  .div-margin {
+    margin: 1% 2% 1% 1%; }
+  .margin {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 115%;
+    margin-top: 2%;
+    font-size: 3.8rem; }
   .img-ind {
     width: 400px;
     height: 350px; }
   .historia {
-    width: 95%;
-    margin: 10% 9% 1% 5%; }
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 4% 0 4% 2%;
+    width: 50%;
+    height: 60%; }
+  .p2 {
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    line-height: 200%;
+    text-align: center; }
   /*Ropa*/
   .grid-ropa {
     column-gap: 30px; }

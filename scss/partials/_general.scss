@@ -21,6 +21,7 @@ h1 {
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin: 0;
 }
 
 h2 {
@@ -76,23 +77,16 @@ body {
         font-family: $fontcinco;
         font-size: $font3;
         color: $blanco;
-        padding-right: 15%;
         text-align: center;
-        line-height: 6rem;
+        line-height: 5rem;
     }
 }
-
-
-/*aside*/
 
 body aside img:hover {
     transform: rotateY(-360deg);
     cursor: pointer;
     transition: 4s;
 }
-
-
-/*pie*/
 
 body footer {
     text-align: center;
