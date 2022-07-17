@@ -2,18 +2,3 @@
 
 
 /*grid area*/
-
-#cabeza {
-    grid-area: nav;
-}
-
-#principal {
-    grid-area: main;
-}
-
-#buscador {
-    grid-area: buscar;
-    color: white;
-    position: static;
-    background-color: rgb(174, 174, 190);
-}
