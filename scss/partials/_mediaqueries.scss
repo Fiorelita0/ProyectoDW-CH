@@ -332,7 +332,7 @@
         display: grid;
         grid-template-columns: auto 20vh;
         grid-template-rows: repeat(5, auto);
-        grid-template-areas: "nav nav " "main main" " section1 links " "section2 section2"" pie pie"
+        grid-template-areas: "nav nav" "main main" "section1 links" "section2 section2"" pie pie"
     }
     .fachada {
         display: flex;
