@@ -769,11 +769,6 @@ body footer {
     padding: 0;
     line-height: 200%;
     text-align: center; }
-  .right {
-    justify-content: left;
-    padding: 1% 18%; }
-    .right p {
-      font-size: 1.6rem; }
   /*Ropa*/
   .grid-ropa {
     column-gap: 30px; }
