@@ -379,7 +379,7 @@ h1 {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
-    grid-template-areas: "nav " "main " " section1 " "links" "section2" " pie"; }
+    grid-template-areas: "nav " "main" "section1" "links" "section2" " pie"; }
   .horizontal2 {
     display: block;
     flex-direction: row;
