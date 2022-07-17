@@ -531,7 +531,7 @@ body footer {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
-    grid-template-areas: "nav" "main" "section1" "links" "section2" " pie"; }
+    grid-template-areas: "nav" "main" "section1" "links" "section2" "pie"; }
   .horizontal2 {
     display: block;
     flex-direction: row;
@@ -764,7 +764,7 @@ body footer {
     width: 50%;
     height: 60%; }
   .p2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin: 0;
     padding: 0;
     line-height: 200%;
