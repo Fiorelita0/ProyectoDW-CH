@@ -35,6 +35,12 @@
 }
 
 //MIXIN
+@mixin display-flow ($display, $flow) {
+    display: $display;
+    flex-flow: $flow;
+}
+
+//MIXIN
 @mixin aside ($display, $flow, $bg-color) {
     display: $display;
     flex-flow: $flow;

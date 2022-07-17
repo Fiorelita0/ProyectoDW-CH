@@ -19,6 +19,8 @@
 
 #item1 {
     grid-area: section1;
+    margin: 0;
+    padding: 0;
 }
 
 #item2 {
@@ -253,7 +255,7 @@
     /*Nosotros*/
     .grid-nosotros {
         display: grid;
-        grid-template-columns: auto 30vh;
+        grid-template-columns: auto 20vh;
         grid-template-rows: repeat(5, auto);
         grid-template-areas: "nav nav " "main main" " section1 links " "section2 section2"" pie pie"
     }
@@ -270,7 +272,7 @@
         }
     }
     .p2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 4.4rem;
         text-align: center;
     }
@@ -278,10 +280,14 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin: 4% 9% 3% 5%;
+        margin: 4% 9% 3% 10%;
         padding: 1% 1%;
-        width: 90%;
+        width: 80%;
         height: auto;
+    }
+    .margin {
+        @include line(flex, center, center, 115%);
+        margin-top: 2%;
     }
     .horizontal2 {
         display: block;
@@ -381,15 +387,35 @@
         align-items: center;
     }
     .horizontal2 {
-        @include direction(flex, row, center)
+        @include direction(flex, row, center);
+        height: auto
+    }
+    .div-margin {
+        margin: 1% 2% 1% 1%
+    }
+    .margin {
+        @include line(flex, center, center, 115%);
+        margin-top: 2%;
+        font-size: 3.8rem;
     }
     .img-ind {
         width: 400px;
         height: 350px;
     }
     .historia {
-        width: 95%;
-        margin: 10% 9% 1% 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin: 4% 0 4% 2%;
+        width: 50%;
+        height: 60%;
+    }
+    .p2 {
+        font-size: 1.8rem;
+        margin: 0;
+        padding: 0;
+        line-height: 200%;
+        text-align: center;
     }
     /*Ropa*/
     .grid-ropa {
