@@ -200,7 +200,7 @@
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(6, auto);
-        grid-template-areas: "nav " "main" "section1" "section2""links" " pie";
+        grid-template-areas: "nav" "main" "section1" "section2""links" " pie";
     }
     section div div p {
         padding: 0 5px;
