@@ -226,3 +226,114 @@
         padding: 10px 0;
         line-height: map-get($espacios, cincuenta);
     }
+    
+    #sucursal2 {
+        margin: 5px 0;
+        padding: 5px 10px;
+        line-height: map-get($espacios, diez);
+        @include justify-content(center)
+    }
+    
+    //contacto
+    .foto5 {
+        background-image: url(../Imagenes/fondocontacto.jpg);
+        @include background(no-repeat, 100% 500px)
+    }
+    
+    .formulario {
+        font-size: 2.5rem;
+    }
+    
+    .form-group {
+        margin: 60px 0px
+    }
+    
+    .section-field {
+        border: 3px solid rgb(0, 0, 0);
+        padding: 15px 0 40px 0;
+        width: 100%;
+        margin: 1% 9% 1% 7%;
+        legend {
+            position: relative;
+            width: 70%;
+            font-size: 2rem;
+            margin: 1% 0% 4% 15%;
+        }
+        label {
+            display: block;
+            margin-bottom: 2%;
+        }
+        input {
+            font-size: 1.4rem;
+            width: 80%;
+        }
+        textarea {
+            font-size: 1.4rem;
+            width: 80%;
+            margin: 3% 10% 0 10%;
+            border: 1px solid $negro;
+        }
+    }
+    
+    .right {
+        @include direction(flex, row, flex start);
+        img {
+            @include display(block)
+        }
+    }
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #consulta {
+        padding: 40px 0;
+        line-height: map-get($espacios, cuarenta);
+    }
+    /*Animaciones*/
+    
+    @keyframes animacionheader {
+        0% {
+            background-image: url(../Imagenes/animacion1.webp);
+        }
+        10% {
+            background-image: url(../Imagenes/animacion.webp);
+        }
+        25% {
+            background-image: url(../Imagenes/animacion2.webp);
+        }
+        50% {
+            background-image: url(../Imagenes/animacion3.webp);
+        }
+        60% {
+            background-image: url(../Imagenes/animacion4.webp);
+        }
+        75% {
+            background-image: url(../Imagenes/animacion5.webp);
+        }
+        100% {
+            background-image: url(../Imagenes/animacion6.webp);
+        }
+    }
+    
+    .foto1 {
+        @include background(no-repeat, 100% 100%);
+        animation-name: animacionheader;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+    }
+    
+    @keyframes texto {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 3;
+        }
+    }
+    
+    .column {
+        animation-name: texto;
+        animation-duration: 3s;
+    }
