@@ -133,6 +133,7 @@
         margin: 0;
         padding: 0;
         h2 {
+            text-align: center;
             font-size: 4rem;
         }
     }
@@ -190,6 +191,7 @@
     .ropa {
         height: 100px;
         width: 100px;
+        margin: 10px 28px;
     }
     #parrafo p {
         font-size: 1.6rem;
@@ -235,6 +237,30 @@
     }
     .font {
         font-size: 1.5rem;
+    }
+    .section-field {
+        padding: 15px 0 30px 0;
+        margin: 2% 0 2% 0;
+        legend {
+            position: relative;
+            width: 70%;
+            font-size: 2rem;
+            margin: 1% 0% 4% 15%;
+        }
+    }
+    .right {
+        padding: 1% 7%;
+    }
+    .row {
+        margin: 0;
+    }
+    .botones {
+        padding: 1% 35%;
+        @include direction (flex, row, center);
+        button {
+            padding: 5% 13%;
+            margin: 3% 15%;
+        }
     }
 }
 
@@ -323,6 +349,7 @@
     .ropa {
         height: 110px;
         width: 110px;
+        margin: 10px 20px;
     }
     #parrafo p {
         font-size: 1.8rem;
@@ -349,11 +376,24 @@
     .column {
         padding: 2%;
     }
+    /*Contacto*/
     .grid-contacto {
         display: grid;
         grid-template-columns: auto 20vh;
         grid-template-rows: repeat(4, auto);
         grid-template-areas: "nav nav" "main main" "section1 links" "pie pie";
+    }
+    .right {
+        padding: 3px 30px;
+        margin-bottom: 3px;
+    }
+    .botones {
+        padding: 1% 45%;
+        @include direction (flex, row, center);
+        button {
+            padding: 5% 13%;
+            margin: 3% 20%;
+        }
     }
 }
 
@@ -417,20 +457,14 @@
         line-height: 200%;
         text-align: center;
     }
-    .right {
-        justify-content: left;
-        padding: 1% 18%;
-        p {
-            font-size: 1.6rem;
-        }
-    }
     /*Ropa*/
     .grid-ropa {
         column-gap: 30px;
     }
     .ropa {
-        height: 140px;
-        width: 140px;
+        height: 135px;
+        width: 150px;
+        margin: 10px 20px;
     }
     /*Sucursal*/
     .grid-sucursal {
@@ -448,5 +482,19 @@
     /*Contacto*/
     .grid-contacto {
         column-gap: 50px;
+    }
+    .right {
+        justify-content: left;
+        padding: 1% 18%;
+        p {
+            font-size: 1.6rem;
+        }
+    }
+    .botones {
+        padding: 1% 49%;
+        button {
+            padding: 8% 18%;
+            margin: 3% 20%;
+        }
     }
 }

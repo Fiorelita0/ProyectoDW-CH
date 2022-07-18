@@ -319,7 +319,7 @@ body footer {
   margin: 0 10px; }
 
 .ropa {
-  margin: 10px 20px; }
+  margin: 10px 5px; }
 
 #parrafo {
   display: block; }
@@ -395,6 +395,19 @@ body footer {
 .row {
   display: flex;
   flex-direction: row; }
+
+.botones {
+  padding: 1% 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .botones button {
+    background-color: #40a9ff;
+    padding: 8% 20%;
+    border: 2px inset white;
+    border-radius: 50px;
+    margin: 0% 30%;
+    font-size: 1.4rem; }
 
 #consulta {
   padding: 40px 0;
@@ -540,6 +553,7 @@ body footer {
     margin: 0;
     padding: 0; }
     .horizontal2 h2 {
+      text-align: center;
       font-size: 4rem; }
   .historia {
     display: flex;
@@ -584,7 +598,8 @@ body footer {
     flex-direction: column; }
   .ropa {
     height: 100px;
-    width: 100px; }
+    width: 100px;
+    margin: 10px 28px; }
   #parrafo p {
     font-size: 1.6rem;
     line-height: 4rem; }
@@ -617,7 +632,27 @@ body footer {
     grid-template-rows: auto auto auto 20vh auto;
     grid-template-areas: "nav" "main" "section1" "links" "pie"; }
   .font {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .section-field {
+    padding: 15px 0 30px 0;
+    margin: 2% 0 2% 0; }
+    .section-field legend {
+      position: relative;
+      width: 70%;
+      font-size: 2rem;
+      margin: 1% 0% 4% 15%; }
+  .right {
+    padding: 1% 7%; }
+  .row {
+    margin: 0; }
+  .botones {
+    padding: 1% 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .botones button {
+      padding: 5% 13%;
+      margin: 3% 15%; } }
 
 /*tablet*/
 @media only screen and (min-width: 768px) {
@@ -690,7 +725,8 @@ body footer {
       padding: 5% 2%; }
   .ropa {
     height: 110px;
-    width: 110px; }
+    width: 110px;
+    margin: 10px 20px; }
   #parrafo p {
     font-size: 1.8rem; }
   /*Sucursal*/
@@ -711,11 +747,23 @@ body footer {
     margin: 3% 5%; }
   .column {
     padding: 2%; }
+  /*Contacto*/
   .grid-contacto {
     display: grid;
     grid-template-columns: auto 20vh;
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: "nav nav" "main main" "section1 links" "pie pie"; } }
+    grid-template-areas: "nav nav" "main main" "section1 links" "pie pie"; }
+  .right {
+    padding: 3px 30px;
+    margin-bottom: 3px; }
+  .botones {
+    padding: 1% 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .botones button {
+      padding: 5% 13%;
+      margin: 3% 20%; } }
 
 /*desktop*/
 @media only screen and (min-width: 1024px) {
@@ -769,17 +817,13 @@ body footer {
     padding: 0;
     line-height: 200%;
     text-align: center; }
-  .right {
-    justify-content: left;
-    padding: 1% 18%; }
-    .right p {
-      font-size: 1.6rem; }
   /*Ropa*/
   .grid-ropa {
     column-gap: 30px; }
   .ropa {
-    height: 140px;
-    width: 140px; }
+    height: 135px;
+    width: 150px;
+    margin: 10px 20px; }
   /*Sucursal*/
   .grid-sucursal {
     column-gap: 30px; }
@@ -792,4 +836,14 @@ body footer {
     width: 50%; }
   /*Contacto*/
   .grid-contacto {
-    column-gap: 50px; } }
+    column-gap: 50px; }
+  .right {
+    justify-content: left;
+    padding: 1% 18%; }
+    .right p {
+      font-size: 1.6rem; }
+  .botones {
+    padding: 1% 49%; }
+    .botones button {
+      padding: 8% 18%;
+      margin: 3% 20%; } }

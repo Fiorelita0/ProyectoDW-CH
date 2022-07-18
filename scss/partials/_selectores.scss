@@ -197,7 +197,7 @@
     }
     
     .ropa {
-        margin: 10px 20px;
+        margin: 10px 5px;
     }
     
     #parrafo {
@@ -285,6 +285,19 @@
     .row {
         display: flex;
         flex-direction: row;
+    }
+    
+    .botones {
+        padding: 1% 50%;
+        @include direction (flex, row, center);
+        button {
+            background-color: rgb(64, 169, 255);
+            padding: 8% 20%;
+            border: 2px inset white;
+            border-radius: 50px;
+            margin: 0% 30%;
+            font-size: 1.4rem;
+        }
     }
     
     #consulta {
